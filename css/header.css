@@ -1,0 +1,258 @@
+.header {
+	position: sticky;
+	top: 0;
+	/*padding-top: 20px;*/
+	background-color: white;
+	border-bottom: 1px solid #ffecec;
+	z-index: 99;
+}
+.nav {
+	padding: 20px 0;
+}
+
+/*--логотип--*/
+.logo {
+	width: 30%;
+	float: left;
+}
+.logo__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #307b9b;
+	font-size: 1.5em;
+	font-weight: bold;
+	position: relative;
+}
+.logo__link::before,
+.logo__link::after {
+	content: "";
+	position: absolute;
+	width: 65%;
+	left: 80px;
+}
+.logo__link::before {
+	height: 24px;
+	background: url("../img/hr.png") center/cover no-repeat;
+	top: 80%;
+}
+.logo__link::after {
+	content: "родительский клуб";
+	font-size: 0.4em;
+	font-weight: bold;
+	color: #ffb800;
+	right: 0;
+	top: 130%;
+	text-align: center;
+}
+.logo__img {
+	width: 75px;
+	vertical-align: top;
+}
+/*--главное меню--*/
+ul {
+	list-style: none;
+}
+.menu {
+	width: 70%;
+	text-align: right;
+	float: right;
+}
+.menu > .menu__item {
+	display: inline-block;
+	margin-left: -5px; /*компенсация отступов между li по умолчанию*/
+	position: relative;
+}
+
+/*подменю, вложенное в li главного меню*/
+.menu__item > .submenu {
+	position: absolute;
+	top: 100%;
+	transform: translateY(-1px);
+	min-width: 100%;
+	/* background-color: #4c996b; */
+}
+/*li подменю, вложенного в главное меню*/
+.submenu__item {
+	position: relative;
+}
+
+/*подменю, вложенное в li подменю*/
+.submenu__item > .submenu {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transform: translateX(-1px);
+	min-width: 100%;
+	/* background-color: #4c996b; */
+}
+/*бордюры всем <a> главного меню и подменю*/
+/* .menu__item:not(:last-child) > a {
+	border-right: 1px solid green;
+} */
+.submenu .submenu__item:not(:last-child) > a {
+	/* border: 1px solid green; */
+	border-bottom: none;
+}
+.submenu .submenu__item:last-child > a {
+	/* border: 1px solid green; */
+	border: none;
+}
+
+/*оформление ссылок в li*/
+.menu__item > a,
+.submenu__item > a {
+	/*font-size: 0.8em;*/
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+	color: #ffb800;
+}
+
+/*прячем все подменю*/
+.submenu {
+	display: none;
+}
+/*подсветка li при наведении*/
+.menu__item:hover a:not(.active),
+.submenu__item:hover a {
+	/* background-color: #3f8059; */
+	color: #307b9b;
+	animation: menuItemAnimation 0.7s linear infinite;
+}
+
+
+
+/*показываем дочернее подменю (если оно есть) при наведении на li*/
+.menu__item:hover > .submenu,
+.submenu__item:hover > .submenu {
+	display: block;
+}
+
+/*--burger--*/
+#burger {
+	display: none;
+}
+label[for="burger"] {
+	display: none;
+	width: 55px;
+	height: 55px;
+	float: right;
+	position: relative;
+	top: 0px;
+	right: 10px;
+	border: 1px solid #ffb800;
+	border-radius: 4px;
+	z-index: 10;
+	transition: border-radius 0.5s;
+}
+label[for="burger"] span {
+	display: block;
+	position: absolute;
+	background-color: #ffb800;
+	width: 80%;
+	left: 10%;
+	height: 6px;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+label[for="burger"] > span:nth-child(1) {
+	top: 8px;
+}
+label[for="burger"] > span:nth-child(2) {
+	top: 24px;
+}
+label[for="burger"] > span:nth-child(3) {
+	top: 40px;
+}
+#burger:checked + label[for="burger"] {
+	border-radius: 50%;
+}
+
+#burger:checked + label[for="burger"] > span:nth-child(1) {
+	top: 24px;
+	transform: rotate(45deg);
+}
+#burger:checked + label[for="burger"] > span:nth-child(2) {
+	display: none;
+}
+#burger:checked + label[for="burger"] > span:nth-child(3) {
+	top: 24px;
+	transform: rotate(-45deg);
+}
+#burger:checked ~ .menu {
+	opacity: 1;
+}
+
+.menu__item > a.active {
+	color: #307b9b;
+}
+
+.menu__item > a.active::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	left: 0;
+	height: 10px;
+	background: url("../img/hr.png") center/cover no-repeat;
+	top: 80%;
+}
+
+/*max-width: 1200px*/
+@media screen and (max-width: 1200px) {
+	.content {
+		width: 100%;
+	}
+	.menu__item > a,
+	.submenu__item > a {
+		padding: 10px 4px;
+		font-size: 18px;
+	}
+	.logo__link {
+		font-size: 1.1em;
+	}
+	.logo__link::after {
+		top: 160%;
+	}
+}
+
+/*max-width: 768px*/
+@media screen and (max-width: 768px) {
+	.content {
+		width: 100%;
+	}
+
+	.logo {
+		width: 50%;
+	}
+	label[for="burger"] {
+		display: block;
+	}
+	.nav {
+		position: relative;
+	}
+	.menu {
+		width: 60%;
+		padding: 15px;
+		position: absolute;
+		top: -10px;
+		right: 0;
+		border: 1px solid #ffb800;
+		border-radius: 35px;
+		background-color: rgba(255, 255, 255, 0.8);
+		opacity: 0;
+		transition: opacity 0.5s;
+	}
+	.menu > .menu__item {
+		display: block;
+	}
+	.menu > .menu__item a {
+		font-size: 24px;
+		padding: 10px;
+		letter-spacing: 0.2em;
+		text-align: left;
+	}
+	.menu__item > a.active::before {
+		background: none;
+	}
+}

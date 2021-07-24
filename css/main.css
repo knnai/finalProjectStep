@@ -1,0 +1,141 @@
+/*--общие--*/
+.section__title {
+	text-transform: uppercase;
+	color: #307b9b;
+	font-size: 48px;
+	text-align: center;
+	position: relative;
+}
+.section__title::after {
+	content: "";
+	position: absolute;
+	width: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 24px;
+	background: url("../img/hr.png") center/cover no-repeat;
+	top: 100%;
+}
+
+/*home*/
+.home {
+	width: 100%;
+	padding: 40px;
+	background-color: #fef5f0;
+}
+.home__title {
+	color: #307b9b;
+	font-size: 48px;
+	text-align: center;
+	transform: scale(0);
+	animation: scale 1s linear 0.2s forwards;
+}
+.home__title span {
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffb800;
+	font-weight: bold;
+}
+.box {
+	padding: 40px 0;
+}
+.home .box__img {
+	width: 50%;
+	float: right;
+	/*transform: scale(0);
+	animation: scale 1s linear 1s forwards;*/
+	position: relative;
+	right: -100%;
+	animation: moveToLeft 1s linear 1s forwards;
+}
+.box__text {
+	width: 50%;
+	float: right;
+}
+.home .box__text p {
+	text-align: justify;
+	margin: 20px 0;
+	color: #307b9b;
+	font-size: 32px;
+	position: relative;
+	left: -100%;
+}
+
+.home .box__text span {
+	text-transform: uppercase;
+	color: #ffb800;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.box__button {
+	padding: 20px;
+	text-align: center;
+	transform: scale(0);
+	animation: scale 1s linear 1.5s forwards;
+}
+
+.home p:nth-child(1) {
+	animation: moveToRight 1s linear 0.2s forwards;
+}
+.home p:nth-child(2) {
+	animation: moveToRight 1s linear 0.4s forwards;
+}
+.home p:nth-child(3) {
+	animation: moveToRight 1s linear 0.6s forwards;
+}
+.home p:nth-child(4) {
+	animation: moveToRight 1s linear 0.8s forwards;
+}
+
+/*about*/
+.about {
+	width: 100%;
+	padding: 40px;
+}
+
+.about .box__img {
+	width: 50%;
+	float: left;
+}
+.about .box__text {
+	text-align: justify;
+	margin: 20px 0;
+	color: #307b9b;
+	font-size: 32px;
+	width: 50%;
+	float: left;
+}
+
+@media screen and (max-width: 1440px) {
+	.box__text p {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.box__text p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.box__text p {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.box__img,
+	.box__text,
+	.about .box__img,
+	.about .box__text {
+		width: 100%;
+		float: none;
+	}
+
+	.box__text p,
+	.about .box__text p {
+		margin: 5px 0;
+	}
+}

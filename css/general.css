@@ -1,0 +1,103 @@
+/*
+COLORS
+#307b9b - blue
+#ffb800 - orange
+##ffecec - background pink
+
+Button linear-gradient
+top FBD079
+bottom EEA82A
+*/
+
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+/*общие*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: "Neucha", cursive;
+	font-size: 24px;
+}
+
+.content {
+	width: 90%;
+	min-width: 425px;
+	max-width: 1400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+.button {
+	text-decoration: none;
+	padding: 10px 20px;
+	color: white;
+	font-weight: bold;
+	border-radius: 20px;
+	background-image: linear-gradient(#fbd079, #eea82a);
+	box-shadow: 0 5px 5px -3px grey;
+	transition: color 1s;
+}
+.button:hover {
+	color: #307b9b;
+}
+
+/*анимации*/
+@keyframes menuItemAnimation {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(7deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(-7deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/*движение слева-направо*/
+@keyframes moveToRight {
+	0% {
+		left: -100%;
+		opacity: 0;
+	}
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+/*движение справа-налево*/
+@keyframes moveToLeft {
+	0% {
+		right: -100%;
+		opacity: 0;
+	}
+	100% {
+		right: 0;
+		opacity: 1;
+	}
+}
+
+/*масштаб от 0 до 1*/
+@keyframes scale {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
