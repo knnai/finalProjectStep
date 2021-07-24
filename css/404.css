@@ -25,7 +25,7 @@ body {
 	position: absolute;
 	width: 300%;
 	left: -100%;
-	top: 100%;
+	top: 90%;
 	height: 24px;
 	background: url("../img/hr.png") center/cover no-repeat;
 }
@@ -36,8 +36,8 @@ body {
 }
 .box404__text {
 	text-align: center;
-	padding: 2%;
-	font-size: 48px;
+	padding: 10%;
+	font-size: 32px;
 }
 
 .box404:nth-child(even) .box404__img {

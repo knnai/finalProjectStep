@@ -1,0 +1,367 @@
+/*
+COLORS
+#307b9b - blue
+#ffb800 - orange
+##ffecec - background pink
+
+Button linear-gradient
+top FBD079
+bottom EEA82A
+*/
+
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+/*общие*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: "Neucha", cursive;
+	font-size: 20px;
+}
+.clear {
+	clear: both;
+}
+
+.button {
+	text-decoration: none;
+	padding: 10px 20px;
+	color: white;
+	font-weight: bold;
+	border-radius: 20px;
+	background-image: linear-gradient(#fbd079, #eea82a);
+	box-shadow: 0 5px 5px -3px grey;
+	transition: color 1s;
+}
+.button:hover {
+	color: #307b9b;
+}
+
+.nav {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1440px;
+	position: relative;
+}
+/*--header--*/
+.header {
+	padding: 20px;
+	/*background-color: black;*/
+	min-width: 320px;
+}
+/*--start логотип--*/
+.logo {
+	/*background-color: darkblue;*/
+	width: 15%;
+	min-width: 150px;
+	float: left;
+}
+.logo__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #307b9b;
+	font-weight: bold;
+	position: relative;
+}
+.logo__link::before,
+.logo__link::after {
+	content: "";
+	position: absolute;
+	width: 65%;
+	left: 35%;
+}
+.logo__link::before {
+	height: 10px;
+	background: url("../img/hr.png") center/cover no-repeat;
+	top: 85%;
+}
+.logo__link::after {
+	content: "родительский клуб";
+	font-size: 0.4em;
+	font-weight: bold;
+	color: #ffb800;
+	right: 0;
+	top: 130%;
+	text-align: center;
+}
+.logo__img {
+	width: 50px;
+	vertical-align: top;
+}
+/*--end логотип--*/
+/*--start меню--*/
+.menu {
+	/*background-color: brown;*/
+	list-style: none;
+	width: 75%;
+	text-align: right;
+	float: right;
+}
+.menu__item {
+	display: inline-block;
+	position: relative;
+}
+
+.menu__item a {
+	text-decoration: none;
+	display: block;
+	padding: 10px 5px;
+	font-weight: bold;
+	color: #ffb800;
+}
+
+.menu__item:hover a:not(.active) {
+	color: #307b9b;
+	animation: menuItemAnimation 0.7s linear infinite;
+}
+
+.menu__item a.active {
+	color: #307b9b;
+}
+
+.menu__item a.active::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	left: 0;
+	height: 10px;
+	background: url("../img/hr.png") center/cover no-repeat;
+	top: 80%;
+}
+/*--end меню--*/
+/*--start burger--*/
+#burger {
+	display: none;
+}
+label[for="burger"] {
+	display: none;
+	width: 55px;
+	height: 55px;
+	float: right;
+	position: relative;
+
+	border: 1px solid #ffb800;
+	border-radius: 4px;
+	z-index: 10;
+	transition: border-radius 0.5s;
+}
+label[for="burger"] span {
+	display: block;
+	position: absolute;
+	background-color: #ffb800;
+	width: 80%;
+	left: 10%;
+	height: 6px;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+label[for="burger"] > span:nth-child(1) {
+	top: 8px;
+}
+label[for="burger"] > span:nth-child(2) {
+	top: 24px;
+}
+label[for="burger"] > span:nth-child(3) {
+	top: 40px;
+}
+#burger:checked + label[for="burger"] {
+	border-radius: 50%;
+}
+
+#burger:checked + label[for="burger"] > span:nth-child(1) {
+	top: 24px;
+	transform: rotate(45deg);
+}
+#burger:checked + label[for="burger"] > span:nth-child(2) {
+	display: none;
+}
+#burger:checked + label[for="burger"] > span:nth-child(3) {
+	top: 24px;
+	transform: rotate(-45deg);
+}
+#burger:checked ~ .menu {
+	opacity: 1;
+}
+/*--end burger--*/
+
+/*--main--*/
+.section__title {
+	text-transform: uppercase;
+	color: #307b9b;
+	font-size: 48px;
+	text-align: center;
+	position: relative;
+}
+.section__title::after {
+	content: "";
+	position: absolute;
+	width: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 24px;
+	background: url("../img/hr.png") center/cover no-repeat;
+	top: 100%;
+}
+
+/*home*/
+.home {
+	width: 100%;
+	padding: 40px;
+	background-color: #fef5f0;
+}
+.home__title {
+	color: #307b9b;
+	font-size: 48px;
+	text-align: center;
+	transform: scale(0);
+	animation: scale 1s linear 0.2s forwards;
+}
+.home__title span {
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffb800;
+	font-weight: bold;
+}
+.box {
+	padding: 40px 0;
+}
+.home .box__img {
+	width: 50%;
+	float: right;
+	/*transform: scale(0);
+	animation: scale 1s linear 1s forwards;*/
+	position: relative;
+	right: -100%;
+	animation: moveToLeft 1s linear 1s forwards;
+}
+.box__text {
+	width: 50%;
+	float: right;
+}
+.home .box__text p {
+	text-align: justify;
+	margin: 20px 0;
+	color: #307b9b;
+	font-size: 32px;
+	position: relative;
+	left: -100%;
+}
+
+.home .box__text span {
+	text-transform: uppercase;
+	color: #ffb800;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.box__button {
+	padding: 20px;
+	text-align: center;
+	transform: scale(0);
+	animation: scale 1s linear 1.5s forwards;
+}
+
+.home p:nth-child(1) {
+	animation: moveToRight 1s linear 0.2s forwards;
+}
+.home p:nth-child(2) {
+	animation: moveToRight 1s linear 0.4s forwards;
+}
+.home p:nth-child(3) {
+	animation: moveToRight 1s linear 0.6s forwards;
+}
+.home p:nth-child(4) {
+	animation: moveToRight 1s linear 0.8s forwards;
+}
+
+/*about*/
+.about {
+	width: 100%;
+	padding: 40px;
+}
+
+.about .box__img {
+	width: 50%;
+	float: left;
+}
+.about .box__text {
+	text-align: justify;
+	margin: 20px 0;
+	color: #307b9b;
+	font-size: 32px;
+	width: 50%;
+	float: left;
+}
+
+/*--404--*/
+
+
+
+
+
+
+
+/*---АДАПТИВ---*/
+/*max-width: 1024px*/
+@media screen and (max-width: 1024px) {
+	.nav {
+		width: 100%;
+	}
+	.menu__item a {
+		font-size: 0.85em;
+	}
+
+	.home .box__text p,
+	.about .box__text p {
+		font-size: 20px;
+	}
+}
+
+/*max-width: 768px*/
+@media screen and (max-width: 768px) {
+	.nav {
+		width: 100%;
+	}
+	label[for="burger"] {
+		display: block;
+	}
+
+	.menu {
+		width: 60%;
+		min-width: 192px;
+		padding: 15px;
+		position: absolute;
+		top: -5px;
+		right: -5px;
+		border: 1px solid #ffb800;
+		border-radius: 30px;
+		background-color: rgba(255, 255, 255, 0.8);
+		opacity: 0;
+		transition: opacity 0.5s;
+	}
+	.menu__item {
+		display: block;
+	}
+	.menu__item a {
+		font-size: 20px;
+		padding: 10px;
+		letter-spacing: 0.2em;
+		text-align: left;
+	}
+	.menu__item > a.active::before {
+		background: none;
+	}
+	.home__title {
+		font-size: 32px;
+	}
+	.home .box__img,
+	.home .box__text,
+	.about .box__img,
+	.about .box__text {
+		display: block;
+		width: 100%;
+		float: none;
+	}
+}
