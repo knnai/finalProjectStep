@@ -19,7 +19,7 @@
 /*движение слева-направо*/
 @keyframes moveToRight {
 	0% {
-		left: -100%;
+		left: -150%;
 		opacity: 0;
 	}
 	100% {
@@ -31,7 +31,7 @@
 /*движение справа-налево*/
 @keyframes moveToLeft {
 	0% {
-		right: -100%;
+		right: -150%;
 		opacity: 0;
 	}
 	100% {

@@ -233,7 +233,7 @@ label[for="burger"] > span:nth-child(3) {
 	/*transform: scale(0);
 	animation: scale 1s linear 1s forwards;*/
 	position: relative;
-	right: -100%;
+	right: -150%;
 	animation: moveToLeft 1s linear 1s forwards;
 }
 .box__text {
@@ -243,10 +243,10 @@ label[for="burger"] > span:nth-child(3) {
 .home .box__text p {
 	text-align: justify;
 	margin: 20px 0;
-	color: #307b9b;
+	color: #307b9b;	
 	font-size: 32px;
 	position: relative;
-	left: -100%;
+	left: -150%;
 }
 
 .home .box__text span {
