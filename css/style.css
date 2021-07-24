@@ -243,7 +243,7 @@ label[for="burger"] > span:nth-child(3) {
 .home .box__text p {
 	text-align: justify;
 	margin: 20px 0;
-	color: #307b9b;	
+	color: #307b9b;
 	font-size: 32px;
 	position: relative;
 	left: -150%;
@@ -321,7 +321,7 @@ label[for="burger"] > span:nth-child(3) {
 	}
 
 	.menu {
-		width: 60%;
+		width: 80%;
 		min-width: 192px;
 		padding: 15px;
 		position: absolute;
@@ -329,7 +329,7 @@ label[for="burger"] > span:nth-child(3) {
 		right: -5px;
 		border: 1px solid #ffb800;
 		border-radius: 30px;
-		background-color: rgba(255, 255, 255, 0.8);
+		background-color: rgba(255, 255, 255, 0.9);
 		z-index: 1;
 		opacity: 0;
 		transition: opacity 0.5s;
