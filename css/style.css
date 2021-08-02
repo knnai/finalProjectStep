@@ -39,18 +39,31 @@ body {
 	color: #307b9b;
 }
 
-.nav {
+.content {
 	width: 80%;
 	margin: 0 auto;
+	min-width: 320px;
 	max-width: 1440px;
-	position: relative;
 }
 /*--header--*/
 .header {
 	padding: 20px;
 	/*background-color: black;*/
 	min-width: 320px;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: white;
 }
+
+.nav {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1440px;
+	position: relative;
+	/*display: sticky;*/
+}
+
 /*--start логотип--*/
 .logo {
 	/*background-color: darkblue;*/
@@ -204,11 +217,28 @@ label[for="burger"] > span:nth-child(3) {
 	background: url("../img/hr.png") center/cover no-repeat;
 	top: 100%;
 }
+.section__subtitle {
+	color: #307b9b;
+	font-size: 36px;
+	text-align: center;
+	position: relative;
+	margin: 25px 0;
+}
+.section__subtitle::after {
+	content: "";
+	position: absolute;
+	width: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 24px;
+	background: url("../img/hr.png") center/cover no-repeat;
+	top: 100%;
+}
 
 /*home*/
 .home {
 	width: 100%;
-	padding: 40px;
+	padding: 40px 20px;
 	background-color: #fef5f0;
 }
 .home__title {
@@ -216,7 +246,7 @@ label[for="burger"] > span:nth-child(3) {
 	font-size: 48px;
 	text-align: center;
 	transform: scale(0);
-	animation: scale 1s linear 0.2s forwards;
+	animation: scale 1s linear 0.5s forwards;
 }
 .home__title span {
 	text-transform: uppercase;
@@ -260,26 +290,26 @@ label[for="burger"] > span:nth-child(3) {
 	padding: 20px;
 	text-align: center;
 	transform: scale(0);
-	animation: scale 1s linear 1.5s forwards;
+	animation: scale 1s linear 1.8s forwards;
 }
 
 .home p:nth-child(1) {
-	animation: moveToRight 1s linear 0.2s forwards;
+	animation: moveToRight 1s linear 0.5s forwards;
 }
 .home p:nth-child(2) {
-	animation: moveToRight 1s linear 0.4s forwards;
+	animation: moveToRight 1s linear 0.7s forwards;
 }
 .home p:nth-child(3) {
-	animation: moveToRight 1s linear 0.6s forwards;
+	animation: moveToRight 1s linear 0.9s forwards;
 }
 .home p:nth-child(4) {
-	animation: moveToRight 1s linear 0.8s forwards;
+	animation: moveToRight 1s linear 1.2s forwards;
 }
 
 /*about*/
 .about {
 	width: 100%;
-	padding: 40px;
+	padding: 40px 20px;
 }
 
 .about .box__img {
@@ -290,24 +320,86 @@ label[for="burger"] > span:nth-child(3) {
 	text-align: justify;
 	margin: 20px 0;
 	color: #307b9b;
-	font-size: 32px;
+	font-size: 24px;
 	width: 50%;
 	float: left;
+}
+
+/*--classes flex--*/
+.list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+.item {
+	display: block;
+	width: 30%;
+	padding: 10px;
+	position: relative;
+}
+.item__link {
+	padding: 5px;
+	text-decoration: none;
+	display: block;
+	font-weight: bold;
+	color: #ffb800;
+}
+.item__img {
+	width: 100%;
+}
+
+.item__frame {
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+	height: 20%;
+	width: 75%;
+	border: 5px solid orange;
+	border-radius: 10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.item:hover > .item__frame {
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 15px 0 orange;
+}
+
+.classes .item:nth-child(1) .item__frame {
+	border: 5px solid red;
+	box-shadow: 0 0 15px 0 red;
+}
+.classes .item:nth-child(2) .item__frame {
+	border: 5px solid green;
+	box-shadow: 0 0 15px 0 green;
+}
+.classes .item:nth-child(3) .item__frame {
+	border: 5px solid blue;
+	box-shadow: 0 0 15px 0 blue;
+}
+
+.languages .item:nth-child(2) .item__frame {
+	border: 5px solid red;
+	box-shadow: 0 0 15px 0 red;
+}
+.languages .item:nth-child(3) .item__frame {
+	border: 5px solid green;
+	box-shadow: 0 0 15px 0 green;
+}
+.languages .item:nth-child(1) .item__frame {
+	border: 5px solid blue;
+	box-shadow: 0 0 15px 0 blue;
 }
 
 /*---АДАПТИВ---*/
 /*max-width: 1024px*/
 @media screen and (max-width: 1024px) {
-	.nav {
+	.nav,
+	.content {
 		width: 100%;
 	}
 	.menu__item a {
 		font-size: 0.85em;
-	}
-
-	.home .box__text p,
-	.about .box__text p {
-		font-size: 20px;
 	}
 }
 
@@ -356,5 +448,21 @@ label[for="burger"] > span:nth-child(3) {
 		display: block;
 		width: 100%;
 		float: none;
+	}
+	.home .box__text p,
+	.about .box__text p {
+		font-size: 1.5em;
+	}
+	.list {
+		display: block;
+	}
+
+	.item {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.item__link {
+		font-size: 1.5em;
 	}
 }
