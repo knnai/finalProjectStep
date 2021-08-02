@@ -352,7 +352,7 @@ label[for="burger"] > span:nth-child(3) {
 	position: absolute;
 	bottom: 0%;
 	left: 0;
-	height: 20%;
+	height: 15%;
 	width: 75%;
 	border: 5px solid orange;
 	border-radius: 10px;
@@ -451,7 +451,8 @@ label[for="burger"] > span:nth-child(3) {
 	}
 	.home .box__text p,
 	.about .box__text p {
-		font-size: 1.5em;
+		margin: 0;
+		font-size: 1em;
 	}
 	.list {
 		display: block;
@@ -464,5 +465,8 @@ label[for="burger"] > span:nth-child(3) {
 
 	.item__link {
 		font-size: 1.5em;
+	}
+	.item__frame {
+		width: 100%;
 	}
 }
