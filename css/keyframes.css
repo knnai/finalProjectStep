@@ -16,8 +16,8 @@
 	}
 }
 
-/*движение слева-направо*/
-@keyframes moveToRight {
+/*движение вправо внутрь*/
+@keyframes moveToRightIn {
 	0% {
 		left: -150%;
 		opacity: 0;
@@ -28,8 +28,8 @@
 	}
 }
 
-/*движение справа-налево*/
-@keyframes moveToLeft {
+/*движение влево внутрь*/
+@keyframes moveToLeftIn {
 	0% {
 		right: -150%;
 		opacity: 0;
@@ -37,6 +37,30 @@
 	100% {
 		right: 0;
 		opacity: 1;
+	}
+}
+
+/*движение влево за пределы*/
+@keyframes moveToLeftOut {
+	0% {
+		left: 0;
+		opacity: 1;
+	}
+	100% {
+		left: -150%;
+		opacity: 0;
+	}
+}
+
+/*движение вправо за пределыь*/
+@keyframes moveToRightOut {
+	0% {
+		right: 0;
+		opacity: 1;
+	}
+	100% {
+		right: -150%;
+		opacity: 0;
 	}
 }
 
