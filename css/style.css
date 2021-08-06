@@ -478,18 +478,55 @@ section {
 	border-radius: 50%;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 36px;
-	font-weight: bold;
-	text-align: center;
-	color: white;
 	transition: 0.5s;
+}
+.prev-btn::before,
+.prev-btn::after,
+.next-btn::before,
+.next-btn::after {
+	content: "";
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	background-color: white;
+	transition: 0.5s;
+}
+.prev-btn::before {
+	top: 40%;
+	left: 30%;
+	transform-origin: bottom left;
+	transform: rotate(45deg);
+}
+.prev-btn::after {
+	top: 50%;
+	left: 30%;
+	transform-origin: top left;
+	transform: rotate(-45deg);
+}
+
+.next-btn::before {
+	top: 50%;
+	right: 30%;
+	transform-origin: top right;
+	transform: rotate(45deg);
+}
+.next-btn::after {
+	top: 40%;
+	right: 30%;
+	transform-origin: bottom right;
+	transform: rotate(-45deg);
 }
 
 .prev-btn:hover,
 .next-btn:hover {
 	cursor: pointer;
 	box-shadow: 0 0px 10px 4px #307b9b;
-	color: #307b9b;
+}
+.prev-btn:hover::before,
+.prev-btn:hover::after,
+.next-btn:hover::before,
+.next-btn:hover::after {
+	background-color: #307b9b;
 }
 
 .prev-btn {
