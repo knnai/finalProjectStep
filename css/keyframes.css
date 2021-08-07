@@ -52,7 +52,7 @@
 	}
 }
 
-/*движение вправо за пределыь*/
+/*движение вправо за пределы*/
 @keyframes moveToRightOut {
 	0% {
 		right: 0;
@@ -71,5 +71,15 @@
 	}
 	100% {
 		transform: scale(1);
+	}
+}
+
+/*вращение*/
+@keyframes animPhoto {
+	0% {
+		transform: rotate(12deg);
+	}
+	100% {
+		transform: rotate(-12deg);
 	}
 }
