@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Одаренок - Занятия</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/keyframes.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<link rel="stylesheet" href="css/classes.css">
+</head>
+
+<body>
+	<header class="header">
+		<nav class="nav">
+			<div class="logo">
+				<a href="index.html" class="logo__link">
+					<img src="img/logo.png" alt="Логотип клуба" class="logo__img">
+					одарёнок
+				</a>
+			</div>
+
+			<input type="checkbox" id="burger">
+			<label for="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<ul class="menu">
+				<li class="menu__item"><a href="about.html">О нас</a></li>
+				<li class="menu__item"><a class="active" href="classes.html">Занятия</a></li>
+				<li class="menu__item"><a href="successes.html">Наши успехи</a></li>
+				<li class="menu__item"><a href="gallery.html">Фотогалерея</a></li>
+				<li class="menu__item"><a href="index.html#events">Мероприятия</a></li>
+				<li class="menu__item"><a href="#reviews">Отзывы</a></li>
+				<li class="menu__item"><a href="#contacts">Контакты</a></li>
+			</ul>
+			<div class="clear"></div>
+		</nav>
+	</header>
+
+	<!--main-->
+	<main class="main-classes">
+		<section class="classes-wrapper">
+			<div class="content">
+				<!-- <h1 class="section__title">Занятия</h1>	 -->
+			</div>
+			<!--Развивашки-->
+			<article class="classes__content" id="classes-small">
+				<div class="content">
+					<h2 class="section__subtitle">Развивашки (от 12 мес.)</h2>
+					<img class="classes__img" src="img/classes-small.jpg" alt="classes-small.jpg">
+					<p class="classes__description">В период между годом и двумя физические возможности ребенка претерпевают
+						колоссальные изменения. Оттачивается навык прямохождения. Постепенно, становясь более уверенным в своих
+						движениях, малыш учится преодолевать преграды: перешагивать через ямки, ходить по траве и камешкам, не падая
+						– ножки у него заплетаются все меньше и меньше. Вскоре, наряду с умением ходить, появляются умения бегать,
+						прыгать, залезать на различные поверхности. Юный альпинист с легкостью забирается на спинку дивана, на
+						горку, шведскую стенку, а потом уверенно сползает обратно.</p>
+					<p class="classes__description">Порой, подсаживаясь к малышу, мы думаем «Так, надо бы позаниматься чем-нибудь
+						полезным, развивающим» и принимаемся копаться в глубинах своей памяти, вспоминая, что же там интересного
+						писали в книжках и на форумах. Но пока мы размышляем, ребенок уже уползает от нас и, забравшись куда-нибудь,
+						подбрасывает нам новых хлопот. Так подходящий момент упускается, и мы снова откладываем «развивашки» до
+						следующего раза. Чтобы избежать такой ситуации, просто необходимо иметь под рукой ПЛАН! План развивающих
+						занятий всегда сможет быстро подсказать нам как интересно и с пользой развлечь малыша.</p>
+					<p class="classes__description">Становление личности и успехи взрослой жизни начинаются с детства. Малыш
+						только познает мир и ждет поддержки его стремлений. Развивающие занятия — это способ познакомиться со всем
+						неизведанным и разнообразным вокруг. В первые годы он очень восприимчив к тому, что его окружает, и это
+						подходящее время, чтобы пробовать заниматься. </p>
+					<p class="classes__description">Сменяются времена года, встречаются увлекательные животные и птицы, взгляд
+						фиксируется на малейших деталях — насекомые, листва и камушки. Поддерживая естественные стремления, можно
+						без труда привить любовь к познанию. Маленький ученик сам будет задавать вопросы и исследовать вещи вокруг,
+						наша задача в этом помочь.</p>
+
+					<div class="clear"></div>
+					<div class="classes__demo">
+						<div class="classes__timetable">
+							<table>
+								<caption>Расписание занятий</caption>
+								<thead>
+									<tr>
+										<th>Пн</th>
+										<th>Вт</th>
+										<th>Ср</th>
+										<th>Чт</th>
+										<th>Пт</th>
+										<th>Сб</th>
+										<th>Вс</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>Первое занятие <span>бесплатно!!!</span></p>
+							<!--<div class="box__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-classes-check">Записаться</label>
+						</div>
+						<div class="classes__video">
+							<h3 class="demo__title">Фрагмент занятия</h3>
+							<!--<video controls="controls" poster="video/promo.jpg">
+								<source src="video/promo.ogv" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="video/promo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="video/promo.webm" type='video/webm; codecs="vp8.42E01E, vorbis"'>
+								Тег video не поддерживается вашим браузером.
+								<a href="video/promo.mp4">Скачайте видео</a>
+							</video>-->
+							<iframe
+								src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F322667251488063%2Fvideos%2F483693112936920%2F&show_text=false&width=560&t=0"
+								style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+								allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+								allowFullScreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<!--Подготовка к школе-->
+			<article class="classes__content" id="classes-school">
+				<div class="content">
+					<h2 class="section__subtitle">Подготовка к школе</h2>
+					<img class="classes__img" src="img/classes-school.jpg" alt="classes-school.jpg">
+					<p class="classes__description">В 6 лет от привычного спокойного распорядка и развлечений идет переход к
+						учебной программе. Без предварительной адаптации будет трудно привыкнуть, поэтому обучение может
+						ассоциироваться с чем-то скучным и неприятным.
+					</p>
+					<p class="classes__description">Школа раннего развития — это часть подготовки к неизбежным переменам, чтобы с
+						радостью начать путь к знаниям. Применение увлекательных упражнений, красок и пластилина помогает изучению
+						ассоциироваться с развлечением и весельем.
+					</p>
+					<p class="classes__description">Таким образом становится понятно, зачем нужны развивающие игры.
+						Подготавливаясь к учебе заранее, будет проще принимать перемены и с интересом исследовать окружение.
+					</p>
+					<p class="classes__description">Первое, на что следует обратить внимание, это усидчивость. Юного ученика
+						просят сидеть ровно, слушать учителя и выполнять классную работу сразу несколько уроков подряд. Посещая
+						подготовительные курсы систематически, легче привыкнуть к учебному процессу и воспринимать перемены, которые
+						привносит школьное расписание.
+					</p>
+					<p class="classes__description">Кроме того, для получения хороших результатов следует тренировать
+						сосредоточенность. В классе не следует отвлекаться и смотреть по сторонам. Систематическое выполнение
+						индивидуальной работы поможет привыкнуть фиксироваться на одном деле и доводить его до конца.
+					</p>
+					<p class="classes__description">Школьник должен с самого начала понимать, что учеба — это его задача.
+						Развивающие уроки для дошкольников начнут понемногу готовить к этому, чтобы сформировать правильное
+						восприятие личной ответственности и самостоятельной работы. Выполнение несложных упражнений без помощи
+						учителя, постепенно вырабатывает привычку учиться самому и не требовать постоянного контроля.
+					</p>
+					<p class="classes__description">Последний момент — умение быть частью коллектива. Первоклассники уже не просто
+						играют вместе, они обучаются и узнают что-то новое. У кого-то будет получаться лучше, у кого-то хуже.
+						Будущий школьник должен быть готов к здоровой конкуренции — уметь не расстраиваться если что-то не
+						получилось и не обижать тех, кто справляется хуже. Будет полезно научиться разрешать конфликты мирно во
+						время работы в команде, делиться и вместе обучаться.
+					</p>
+					<div class="clear"></div>
+					<div class="classes__demo">
+						<div class="classes__timetable">
+							<table>
+								<caption>Расписание занятий</caption>
+								<thead>
+									<tr>
+										<th>Пн</th>
+										<th>Вт</th>
+										<th>Ср</th>
+										<th>Чт</th>
+										<th>Пт</th>
+										<th>Сб</th>
+										<th>Вс</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>Первое занятие <span>бесплатно!!!</span></p>
+							<!--<div class="box__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-classes-check">Записаться</label>
+						</div>
+						<div class="classes__video">
+							<h3 class="demo__title">Фрагмент занятия</h3>
+							<!--<video controls="controls" poster="video/promo.jpg">
+								<source src="video/promo.ogv" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="video/promo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="video/promo.webm" type='video/webm; codecs="vp8.42E01E, vorbis"'>
+								Тег video не поддерживается вашим браузером.
+								<a href="video/promo.mp4">Скачайте видео</a>
+							</video>-->
+							<iframe class="demo__video" src="https://www.youtube.com/embed/epa3e1kEATY" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</article>
+			<!--Ментальная арифметика-->
+			<article class="classes__content" id="classes-ma">
+				<div class="content">
+					<h2 class="section__subtitle">Ментальная арифметика</h2>
+					<img class="classes__img" src="img/classes-ma.jpg" alt="classes-ma.jpg">
+					<p class="classes__description">Не секрет, что левое полушарие головного мозга отвечает за логику,
+						рациональность и анализ, а правое – за образность, целостность, интуицию, фантазию и воображение. Но как
+						найти золотую середину и развить взаимосвязь работы обоих полушарий, чтобы максимально раскрыть потенциал
+						ребенка? На помощь придут занятия по ментальной арифметике.
+					</p>
+					<p class="classes__description">Уроки ментальной арифметики — это комплекс простых и увлекательных занятий для
+						детей, которые развивают навыки, необходимые для достижения жизненного успеха. Дети, которые не интересуются
+						точными науками или неуверенно чувствуют себя, решая примеры по математике, найдут в занятиях ментальной
+						арифметикой творческое начало. Освоив ее, ребенок сможет решать арифметические задачи в уме всего за
+						несколько секунд.
+					</p>
+					<p class="classes__description">Техника ментальной арифметики пришла к нам из Японии, где зародилась в начале
+						XVI века. Поэтому преподаватели обучают детей пользоваться специальными счетами «абак» для визуализации
+						счетного процесса. Малыши, не знакомые с цифрами, проходят предварительную подготовку в виде курса
+						«Знакомство с абаком».
+					</p>
+					<p class="classes__description">Двухмесячный курс в группах по 5-8 человек, с опытным преподавателем, в
+						доступной игровой форме введёт ребёнка в мир цифр. Малыши научатся правильно держать карандаш и писать
+						цифры, а также откладывать на абаке числа, передвигая бусинки.В результате предварительного обучения дети
+						осваивают счёт до 20 и могут решать простейшие примеры.
+					</p>
+					<p class="classes__description">Освоив технику ментальной математики, дети приобретут: развитие мелкой
+						моторики (поскольку работа со счетами «абак» — это еще тренировка пальцев рук, развивающая ловкость,
+						улучшение памяти (ребенку будет гораздо легче запоминать большие объемы информации и усваивать её),
+						повышение интереса к учебе (занятия в игровой форме разовьют у ребенка повышенный интерес к учебному
+						процессу и учебе в целом)
+					</p>
+					<div class="clear"></div>
+					<div class="classes__demo">
+						<div class="classes__timetable">
+							<table>
+								<caption>Расписание занятий</caption>
+								<thead>
+									<tr>
+										<th>Пн</th>
+										<th>Вт</th>
+										<th>Ср</th>
+										<th>Чт</th>
+										<th>Пт</th>
+										<th>Сб</th>
+										<th>Вс</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>Первое занятие <span>бесплатно!!!</span></p>
+							<!--<div class="box__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-classes-check">Записаться</label>
+						</div>
+						<div class="classes__video">
+							<h3 class="demo__title">Международная олимпиада</h3>
+							<!--<video controls="controls" poster="video/promo.jpg">
+								<source src="video/promo.ogv" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="video/promo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="video/promo.webm" type='video/webm; codecs="vp8.42E01E, vorbis"'>
+								Тег video не поддерживается вашим браузером.
+								<a href="video/promo.mp4">Скачайте видео</a>
+							</video>-->
+							<iframe src="https://www.youtube.com/embed/K_Q-iTmJ0DM" title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<!--Иностранные языки-->
+			<article class="classes__content" id="classes-languages">
+				<div class="content">
+					<h2 class="section__subtitle">Иностранные языки</h2>
+					<img class="classes__img" src="img/english.jpg" alt="english.jpg">
+					<p class="classes__description">Нужен ли вашему ребенку иностранный язык? Вопрос очень актуальный и спорный.
+						Популярно мнение, что наряду с нагрузкой в школе, внеурочной деятельностью, кружками и секциями пары обычных
+						уроков иностранного в неделю в среднестатистической школе будет достаточно. Но как показывает практика —
+						нет. У многих ли из нас закрепились надолго знания, полученные в школе? Какие у вас ассоциации со школьным
+						иностранным языком?
+					</p>
+					<p class="classes__description">Школьному учителю достаточно сложно за 45 минут объяснить материал, дать новое
+						домашнее задание и проверить старое. Да еще и так, чтобы быть уверенным в знаниях 25-30 детей в классе.
+						Поэтому на помощь родителям и их чадам приходят курсы иностранного языка для детей, которые покажут вашему
+						ребенку, что иностранный язык может быть совсем не таким, как в школе. Всем известно, что начинать учить
+						иностранный язык с детства проще, чем начинать с нуля, уже будучи взрослым человеком, однако, существует
+						масса нюансов.
+					</p>
+					<p class="classes__description">Наши преподаватели обеспечивают дифференцированный подход в соответствии с
+						возрастом ребят. Ведь для младших детей характерна неусидчивость, низкий уровень концентрации, быстрая
+						утомляемость. Преподаватель на протяжении всего занятия следит за физическим и эмоциональным состоянием
+						детей, предлагает им смену деятельности и ни в коем случае не дает своим юным студентам заскучать!
+					</p>
+					<p class="classes__description">Дошкольники на уроках иностранного языка будут учиться быть усидчивыми и
+						внимательными, учатся общаться со сверстниками и развивают память — все это пригодится в начальной школе.
+						Перед тем, как пойти в первый класс, ваш ребенок будет уже смело рассказывать о себе или своей любимой
+						игрушке на иностранном языке, строить простые диалоги и разговаривать простыми предложениями.
+					</p>
+					<p class="classes__description">Младшие же школьники укрепляют знания, получаемые в школе (развивают навыки
+						говорения, письма, аудирования и чтения, расширяют словарный запас и не боятся делать ошибки в устной речи
+						во время диалога или монолога), и после окончания курсов готовы к освоению более сложных учебных программ.
+					</p>
+					<div class="clear"></div>
+					<div class="classes__demo">
+						<div class="classes__timetable">
+							<table>
+								<caption>Расписание занятий</caption>
+								<thead>
+									<tr>
+										<th>Язык</th>
+										<th>Пн</th>
+										<th>Вт</th>
+										<th>Ср</th>
+										<th>Чт</th>
+										<th>Пт</th>
+										<th>Сб</th>
+										<th>Вс</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>Английский</th>
+										<td>15:00 - 17:00</td>
+										<td>-</td>
+										<td>13:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 16:00</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<th>Французский</th>
+										<td>-</td>
+										<td>15:00 - 17:00</td>
+										<td>-</td>
+										<td>14:00 - 16:00</td>
+										<td>-</td>
+										<td>13:00 - 15:00</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<th>Немецкий</th>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+
+								</tbody>
+							</table>
+							<p>Первое занятие <span>бесплатно!!!</span></p>
+							<!--<div class="box__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-classes-check">Записаться</label>
+						</div>
+						<div class="classes__video">
+							<h3 class="demo__title">Фрагмент занятия</h3>
+							<!--<video controls="controls" poster="video/promo.jpg">
+								<source src="video/promo.ogv" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="video/promo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="video/promo.webm" type='video/webm; codecs="vp8.42E01E, vorbis"'>
+								Тег video не поддерживается вашим браузером.
+								<a href="video/promo.mp4">Скачайте видео</a>
+							</video>-->
+							<iframe src="https://www.youtube.com/embed/jWeKC7LHsuw" title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+					</div>
+				</div>
+			</article>
+			<!--Живопись-->
+			<article class="classes__content" id="classes-painting">
+				<div class="content">
+					<h2 class="section__subtitle">Живопись</h2>
+					<img class="classes__img" src="img/painting.jpg" alt="painting.jpg">
+					<p class="classes__description">В нашей художественной школе на уроке живописи для начинающих вы сможете с
+						помощью опытного преподавателя освоить азы создания натюрморта или пейзажа. Рисование иногда сравнивают с
+						решением сложной логической задачи. Несомненно, это именно так. На уроках рисования в художественной школе
+						вы каждый раз будете решать новую логическую задачу, состоящую из множества компонентов – выбор фона, выбор
+						композиции, выписывание фигур и теней, подбор цветов. Это не только творчество, но и важная тренировка для
+						мозга – задействованы память, внимательность, наблюдательность, мышление, нужно ставить задачи и искать их
+						решения.</p>
+					<p class="classes__description">Если что-то кажется сложным, преподаватель всегда подскажет и повторит
+						объяснение. Краски смешивают на палитре, затем грубыми мазками наносят на холст. После этого кистью водят по
+						холсту, делая перекрест цветов.</p>
+					<p class="classes__description">Уроки живописи маслом помогут вам научиться точно изображать нужный цвет на
+						картине. Сначала вы определяете цвет, затем подбираете его интенсивность (добавляя другие краски) и оттенок
+						(затемняя или осветляя его). Уже к середине курса живописи вы будете уверенно смешивать краски, добиваясь
+						нужного оттенка.</p>
+					<p class="classes__description">Чтобы ценить живопись, войти в контакт с миром великих художников, «читать» те
+						новеллы, о которых повествуют великие полотна, вам нужно самим начать рисовать. Пока вы не попробовали сами,
+						любой поход в музей или художественную галерею не принесет вам того глубокого чувства сопричастности к
+						великому, какое вы можете испытать будучи начинающим художником. Для этого надо победить страх и неверие в
+						свои таланты, выйти за рамки привычной жизненной колеи.</p>
+
+					<div class="clear"></div>
+					<div class="classes__demo">
+						<div class="classes__timetable">
+							<table>
+								<caption>Расписание занятий</caption>
+								<thead>
+									<tr>
+										<th>Пн</th>
+										<th>Вт</th>
+										<th>Ср</th>
+										<th>Чт</th>
+										<th>Пт</th>
+										<th>Сб</th>
+										<th>Вс</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>Первое занятие <span>бесплатно!!!</span></p>
+							<!--<div class="box__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-classes-check">Записаться</label>
+						</div>
+						<div class="classes__video">
+							<h3 class="demo__title">Фрагмент занятия</h3>
+							<!---<video controls="controls" poster="video/promo.jpg">
+								<source src="video/promo.ogv" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="video/promo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="video/promo.webm" type='video/webm; codecs="vp8.42E01E, vorbis"'>
+								Тег video не поддерживается вашим браузером.
+								<a href="video/promo.mp4">Скачайте видео</a>
+							</video>-->
+							<iframe src="https://www.youtube.com/embed/dSWToBagblg" title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+						</div>						
+					</div>
+				</div>
+			</article>
+
+			<!--Вокал-->
+			<article class="classes__content" id="classes-vokals">
+				<div class="content">
+					<h2 class="section__subtitle">Вокал</h2>
+					<img class="classes__img" src="img/vokals.jpg" alt="vokals.jpg">
+					<p class="classes__description">В раннем возрасте у детей активируется много талантов и возможностей. Пение
+						для детей - это еще один способ обратить на себя внимание. В этот период очень важно направить энергию в
+						нужное русло.
+					</p>
+					<p class="classes__description">Если ваш ребенок часто поет, повторяет песенки из мультиков, любит выступать,
+						устраивает концерты, стоит сделать уклон на развитие вокальных способностей. Как показывают биографии многих
+						звезд, все они начинали петь в очень раннем возрасте.
+					</p>
+					<p class="classes__description">Если у вашего ребенка сильный и звонкий голос, не стоит идти в хор.
+						Неправильное пение других детей может ухудшить пение вашего ребенка. К тому же, на фоне остальных, такой
+						голос будет сильно выделяться и его нужно будет постоянно приглушать. Тихое пение на малом диапазоне
+						затормозит развитие голосовых данных вашего ребенка. Лучшее решение – это занятия, в которых будет
+						индивидуальный подход, то есть, нужно заниматься сольным пением.
+					</p>
+					<p class="classes__description"> Если же голос ребенка тихий и слабый или нет скоординированности слуха и
+						голоса, тогда можно начать с пения в хоре. Какое бы обучение вы не выбрали, сначала ребенка нужно научить
+						правильно стоять и дышать. Дальше - научить петь чисто и проработать четкую дикцию.
+					</p>
+					<p class="classes__description">У многих детей есть проблемы с произношением. И совсем необязательно
+						записываться к логопеду, чтобы это исправить. Занятия с логопедом часто бывают не эффективны из-за того, что
+						ребенку скучно и не интересно. Пение для детей - это интересно и полезно одновременно. В процессе занятий
+						вокалом ребенок освоит и с удовольствием отработает упражнения, которые улучшат его произношение.
+					</p>
+					<div class="clear"></div>
+					<div class="classes__demo">
+						<div class="classes__timetable">
+							<table>
+								<caption>Расписание занятий</caption>
+								<thead>
+									<tr>
+										<th>Пн</th>
+										<th>Вт</th>
+										<th>Ср</th>
+										<th>Чт</th>
+										<th>Пт</th>
+										<th>Сб</th>
+										<th>Вс</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>Первое занятие <span>бесплатно!!!</span></p>
+							<!--<div class="box__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-classes-check">Записаться</label>
+						</div>
+						<div class="classes__video">
+							<h3 class="demo__title">Фрагмент занятия</h3>
+							<!--<video controls="controls" poster="video/promo.jpg">
+								<source src="video/promo.ogv" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="video/promo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="video/promo.webm" type='video/webm; codecs="vp8.42E01E, vorbis"'>
+								Тег video не поддерживается вашим браузером.
+								<a href="video/promo.mp4">Скачайте видео</a>
+							</video>-->
+							<iframe
+								src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F322667251488063%2Fvideos%2F413321066041754%2F&show_text=false&width=560&t=0"
+								style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+								allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+								allowFullScreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+			</article>
+			<!--Хореография-->
+			<article class="classes__content" id="classes-dancing">
+				<div class="content">
+					<h2 class="section__subtitle">Хореография</h2>
+					<img class="classes__img" src="img/dancing.jpg" alt="dancing.jpg">
+					<p class="classes__description">Хореография - это основа практически всех танцев. Очень часто ведутся споры о
+						ее значении в развитии ребенка и его навыков. Польза хореографии, безусловно, колоссальна. Обучившись ей,
+						ребенок с легкостью сможет начать осваивать любые выбранные танцевальные направления.
+					</p>
+					<p class="classes__description">Дети с радостью занимаются танцами. Хорошая музыка, возможность выплеснуть
+						свою энергию в движениях, одежда для танцев, общение со сверстниками - все это привлекает внимание ребенка и
+						дарит ему позитивные эмоции, тем самым благотворно влияя на его психическое развитие.
+					</p>
+					<p class="classes__description">Хореографией дети могут начать заниматься с самого раннего возраста – с 3-4
+						лет. Занятия для малышей проводятся в форме увлекательных игр и направлены на ритмику и растяжку. На уроках
+						дети учатся чувствовать ритм музыки, улавливать и распознавать его, двигаясь и совершая простые танцевальные
+						движения. Занятия для детей старшего возраста содержат уже более сложные элементы и движения, основывающиеся
+						на классической хореографии.
+					</p>
+					<p class="classes__description">Занятия хореографией безопасны для детского организма и при этом обладают
+						рядом немаловажных преимуществ, положительно влияющих на здоровье малыша. Так, например, хореография
+						помогает выработать красивую, правильную осанку, выровнять и укрепить позвоночник. Помимо этого, уроки дают
+						значительную нагрузку на мышцы и суставы: в юном возрасте они очень подвижны и эластичны - это отличная
+						возможность начать формировать красивое, гармонично сложенное тело. Для детей, в отличие от взрослых,
+						выполнение таких упражнений, как шпагат или мостик - простейшая задача. Начав развивать способности ребенка
+						с детства, можно сохранить гибкость и пластичность на всю жизнь.
+					</p>
+					<p class="classes__description">Хореография помогает научиться чувствовать музыку, соотносить ее с танцем.
+						Благодаря основам хореографии, танец прекращает для ребенка быть просто набором движений и синхронизируется
+						с музыкой. Это значительно упрощает и ускоряет процесс изучения выбранного направления танца, особенного
+						бального танца. Приобретенные на занятиях по хореографии навыки помогают чувствовать себя в процессе
+						обучения танцу и на паркете более уверенно и раскованно. Это позволит глубже изучить и освоить технику,
+						например, бальных танцев, которая достаточно сложна. Ребенок сможет применить на практике полученные знания
+						и гораздо быстрее достичь нужных результатов. Кроме того, уроки хореографии очень помогают развивать и
+						«прокачать» стопы детей, работа которых очень важна в бальных танцах для качественного танцевания как
+						латиноамериканской, так и европейской программы.
+					</p>
+					<div class="clear"></div>
+					<div class="classes__demo">
+						<div class="classes__timetable">
+							<table>
+								<caption>Расписание занятий</caption>
+								<thead>
+									<tr>
+										<th>Пн</th>
+										<th>Вт</th>
+										<th>Ср</th>
+										<th>Чт</th>
+										<th>Пт</th>
+										<th>Сб</th>
+										<th>Вс</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>14:00 - 15:00</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>Первое занятие <span>бесплатно!!!</span></p>
+							<!--<div class="box__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-classes-check">Записаться</label>
+						</div>
+						<div class="classes__video">
+							<h3 class="demo__title">Показательные выступления в ДКиТ НКМЗ</h3>
+							<video controls="controls" poster="video/pirates.jpg">
+								<source src="video/pirates.ogv" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="video/pirates.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="video/pirates.webm" type='video/webm; codecs="vp8.42E01E, vorbis"'>
+								Тег video не поддерживается вашим браузером.
+								<a href="video/pirates.mp4">Скачайте видео</a>
+							</video>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!--форма записи на пробный урок-->
+		<input type="checkbox" id="reg-classes-check">
+		<div class="form-wrapper">
+			<form class="form registration" action="#" method="POST">
+				<label class="registration__close" for="reg-classes-check"></label>
+				<p class="form__title">Записаться на пробное занятие</p>
+				<select class="form__classes" name="classes" placeholder="Вид занятия" required>
+					<option value=""></option>
+					<optgroup class="reg-classes" label="Для малышей">
+						<option value="small">Развивашки(от 12 мес.)</option>
+						<option value="school">Подготовка к школе</option>
+						<option value="mental-arithmetic">Ментальная арифметика</option>
+					</optgroup>
+					<optgroup class="reg-classes" label="Иностранные языки">
+						<option value="english">Английский</option>
+						<option value="france">Французский</option>
+						<option value="german">Немецкий</option>
+					</optgroup>
+					<optgroup class="reg-classes" label="Искусство">
+						<option value="painting">Живопись</option>
+						<option value="vokals">Вокал</option>
+						<option value="dancing">Хореография</option>
+					</optgroup>
+				</select>
+				<input class="form__name" type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input class="form__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона" required>
+				<input class="form__submit" type="submit" value="Записаться">
+			</form>
+		</div>
+	</main>
+	<!--contacts-->
+	<footer class="footer" id="contacts">
+		<div class="content">
+			<h2 class="section__title">Контакты</h2>
+			<div class="contacts">
+				<div class="contacts__description">
+					<div class="contacts__location">
+						<p>Родительский клуб <span>&laquo;одарёнок&raquo;</span></p>
+						<p class="contacts__addr">г.Краматорск, ул.Дворцовая 99</p>
+						<a class="contacts__tel" href="tel:+380501234567">+38 (050) 123-45-67</a>
+					</div>
+					<div class="contacts__social">
+						<p>Мы в социальных сетях</p>
+						<a class="contacts__soc-link"
+							href="https://www.facebook.com/%D0%9E%D0%B4%D0%B0%D1%80%D0%B5%D0%BD%D0%BE%D0%BA-322667251488063/"
+							target="_blank"><img src="img/facebook.svg" alt=""></a>
+						<a class="contacts__soc-link" href="#"><img src="img/instagram.svg" alt=""></a>
+						<a class="contacts__soc-link" href="#"><img src="img/twitter.svg" alt=""></a>
+					</div>
+					<div class="contacts__question">
+						<p>Остались вопросы?</p>
+						<form action="#" method="POST" class="form">
+							<input class="form__name" type="text" name="name" id="name" placeholder="Ваше имя" required>
+							<input class="form__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона" required>
+							<textarea class="form__question" name="question" id="question" cols="30" rows="5" placeholder="Ваш вопрос"
+								required></textarea>
+							<input class="form__submit question__submit" type="submit" value="Задать вопрос">
+						</form>
+					</div>
+				</div>
+				<div class="contacts__map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.052791669497!2d37.60544011508178!3d48.72358291814411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df96f4271b940b%3A0x5f97e1f3199a2b83!2z0KDQvtC00LjRgtC10LvRjNGB0LrQuNC5INCa0LvRg9CxICLQntC00LDRgNC10L3QvtC6Ig!5e0!3m2!1sru!2sua!4v1628333777778!5m2!1sru!2sua"
+						width="600" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<h2 class="section__title">Спасибо за просмотр!</h2>
+			<p class="copyright">&copy;2021</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

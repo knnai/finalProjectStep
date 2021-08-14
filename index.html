@@ -9,6 +9,7 @@
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/keyframes.css">
+	<link rel="stylesheet" href="css/forms.css">
 </head>
 
 <body>
@@ -20,9 +21,7 @@
 					одарёнок
 				</a>
 			</div>
-			<!-- поиск -->
-			<!--<div class="nav__search"></div>-->
-			<!--главное меню-->
+			
 			<input type="checkbox" id="burger">
 			<label for="burger">
 				<span></span>
@@ -30,13 +29,13 @@
 				<span></span>
 			</label>
 			<ul class="menu">
-				<li class="menu__item "><a href="#about">О нас</a></li>
-				<li class="menu__item"><a href="#">Занятия</a></li>
-				<li class="menu__item"><a href="#">Наши успехи</a></li>
-				<li class="menu__item"><a href="#">Мероприятия</a></li>
-				<li class="menu__item"><a href="#">Фотогалерея</a></li>
-				<li class="menu__item"><a href="#">Отзывы</a></li>
-				<li class="menu__item"><a href="#">Контакты</a></li>
+				<li class="menu__item"><a href="about.html">О нас</a></li>
+				<li class="menu__item"><a href="classes.html">Занятия</a></li>
+				<li class="menu__item"><a href="successes.html">Наши успехи</a></li>				
+				<li class="menu__item"><a href="gallery.html">Фотогалерея</a></li>
+				<li class="menu__item"><a href="index.html#events">Мероприятия</a></li>
+				<li class="menu__item"><a href="#reviews">Отзывы</a></li>
+				<li class="menu__item"><a href="#contacts">Контакты</a></li>
 			</ul>
 			<div class="clear"></div>
 		</nav>
@@ -55,7 +54,8 @@
 						<p>Мы предлагаем различные направления для развития ваших детей.</p>
 						<p>Опытные педагоги помогут вашим деткам стать ещё лучше!</p>
 						<p>Первое занятие <span>бесплатно!!!</span></p>
-						<div class="box__button"><a href="#" class="button">Записаться</a></div>
+						<!--<div class="box__button"><a href="#" class="button">Записаться</a></div>-->
+						<label class="label-button" for="reg-classes-check">Записаться</label>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -77,38 +77,38 @@
 						<p>Ваш ребенок будет окружен заботой и любовью.</p>
 						<p>С нами интересно расти и развиваться вместе!</p>
 					</div>
-					<div class="box__button"><a href="#" class="button">Подробнее</a></div>
-					<div class="clear"></div>
+					<div class="box__button"><a href="about.html" class="button">Подробнее</a></div>	
+					<div class="clear"></div>					
 				</div>
 			</div>
 		</section>
 
 		<!--classes-->
-		<section class="classes">
+		<section class="classes" id="classes">
 			<div class="content">
 				<h2 class="section__title">Занятия</h2>
 				<h3 class="section__subtitle">Для самых маленьких</h3>
 				<div class="list">
 
 					<div class="item">
-						<a class="item__link" href="#">
+						<a class="item__link" href="classes.html#classes-small">
 							<img class="item__img" src="img/classes-small.jpg" alt="">
 							Развивашки от 12 мес</a>
-						<div class="item__frame"></div>
+						<!-- <div class="item__frame"></div> -->
 					</div>
 
 					<div class="item">
-						<a class="item__link" href="#">
+						<a class="item__link" href="classes.html#classes-school">
 							<img class="item__img" src="img/classes-school.jpg" alt="">
 							Подготовка к школе</a>
-						<div class="item__frame"></div>
+						<!-- <div class="item__frame"></div> -->
 					</div>
 
 					<div class="item">
-						<a class="item__link" href="#">
+						<a class="item__link" href="classes.html#classes-ma">
 							<img class="item__img" src="img/classes-ma.jpg" alt="">
 							Ментальная арифметика</a>
-						<div class="item__frame"></div>
+						<!-- <div class="item__frame"></div> -->
 					</div>
 				</div>
 			</div>
@@ -120,24 +120,24 @@
 				<div class="list">
 
 					<div class="item">
-						<a class="item__link" href="#">
+						<a class="item__link" href="classes.html#classes-languages">
 							<img class="item__img" src="img/english.jpg" alt="">
 							Английский язык</a>
-						<div class="item__frame"></div>
+						<!-- <div class="item__frame"></div> -->
 					</div>
 
 					<div class="item">
-						<a class="item__link" href="#">
+						<a class="item__link" href="classes.html#classes-languages">
 							<img class="item__img" src="img/france.jpg" alt="">
 							Французский язык</a>
-						<div class="item__frame"></div>
+						<!-- <div class="item__frame"></div> -->
 					</div>
 
 					<div class="item">
-						<a class="item__link" href="#">
+						<a class="item__link" href="classes.html#classes-languages">
 							<img class="item__img" src="img/german.jpg" alt="">
 							Немецкий язык</a>
-						<div class="item__frame"></div>
+						<!-- <div class="item__frame"></div> -->
 					</div>
 				</div>
 			</div>
@@ -150,31 +150,31 @@
 				<div class="list">
 
 					<div class="item">
-						<a class="item__link" href="#">
+						<a class="item__link" href="classes.html#classes-painting">
 							<img class="item__img" src="img/painting.jpg" alt="">
 							Живопись</a>
-						<div class="item__frame"></div>
+						<!-- <div class="item__frame"></div> -->
 					</div>
 
 					<div class="item">
-						<a class="item__link" href="#">
+						<a class="item__link" href="classes.html#classes-vokals">
 							<img class="item__img" src="img/vokals.jpg" alt="">
 							Вокал</a>
-						<div class="item__frame"></div>
+						<!-- <div class="item__frame"></div> -->
 					</div>
 
 					<div class="item">
-						<a class="item__link" href="#">
+						<a class="item__link" href="classes.html#classes-dancing">
 							<img class="item__img" src="img/dancing.jpg" alt="">
 							Хореография</a>
-						<div class="item__frame"></div>
+						<!-- <div class="item__frame"></div> -->
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!--successes-->
-		<section class="successes">
+		<section class="successes" id="successes">
 			<div class="content">
 				<h2 class="section__title">Наши успехи</h2>
 				<div class="block-for-slider">
@@ -192,50 +192,10 @@
 				</div>
 				<div class="box__button"><a href="#" class="button">Подробнее</a></div>
 			</div>
-		</section>
-
-		<!--events-->
-		<section class="events">
-			<div class="content">
-				<h2 class="section__title">Мероприятия</h2>
-				<div class="list">
-
-					<div class="event">
-						<img class="event__img" src="img/event-1.jpg" alt="">
-						<div class="event__revers">
-							<p class="event__title">Мастер класс<br>&laquo;Солнышко для мамы&raquo;</p>
-							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
-								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
-							<div class="event__button"><a href="#" class="button">Записаться</a></div>
-						</div>
-					</div>
-
-					<div class="event">
-						<img class="event__img" src="img/event-2.jpg" alt="">
-						<div class="event__revers">
-							<p class="event__title">Мастер класс<br>&laquo;А ну-ка, девочки!&raquo;</p>
-							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
-								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
-							<div class="event__button"><a href="#" class="button">Записаться</a></div>
-						</div>
-					</div>
-
-					<div class="event">
-						<img class="event__img" src="img/event-3.jpg" alt="">
-						<div class="event__revers">
-							<p class="event__title">Мастер класс<br>&laquo;Букет для учителя&raquo;</p>
-							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
-								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
-							<div class="event__button"><a href="#" class="button">Записаться</a></div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
+		</section>		
 
 		<!--gallery-->
-		<section class="gallery">
+		<section class="gallery" id="gallery">
 			<div class="content">
 				<h2 class="section__title">Фотогалерея</h2>
 				<div class="gallery__viewport">
@@ -252,9 +212,51 @@
 			<div class="box__button"><a href="#" class="button">Подробнее</a></div>
 			</div>
 		</section>
+		
+		<!--events-->
+		<section class="events" id="events">
+			<div class="content">
+				<h2 class="section__title">Мероприятия</h2>
+				<div class="list">
 
+					<div class="event">
+						<img class="event__img" src="img/event-1.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;Солнышко для мамы&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+
+					<div class="event">
+						<img class="event__img" src="img/event-2.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;А ну-ка, девочки!&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+
+					<div class="event">
+						<img class="event__img" src="img/event-3.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;Букет для учителя&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
 		<!--reviews-->
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="content">
 				<h2 class="section__title">Отзывы родителей</h2>
 				<div class="block-for-slider">
@@ -339,8 +341,56 @@
 			</div>
 		</section>
 
+	
+		<!--форма записи на пробный урок-->	
+		<input type="checkbox" id="reg-classes-check">		
+		<div class="form-wrapper">			
+			<form class="form registration" action="#" method="POST">
+				<label class="registration__close" for="reg-classes-check"></label>
+				<p class="form__title">Записаться на пробное занятие</p>
+				<select class="form__classes" name="classes" placeholder="Вид занятия" required>
+					<option value =""></option>
+				    <optgroup class="reg-classes" label = "Для малышей">
+						<option value ="small">Развивашки(от 12 мес.)</option>
+						<option value ="school">Подготовка к школе</option>
+						<option value ="mental-arithmetic">Ментальная арифметика</option>
+					</optgroup>
+				    <optgroup class="reg-classes" label = "Иностранные языки">
+						<option value ="english">Английский</option>
+						<option value ="france">Французский</option>
+						<option value ="german">Немецкий</option>
+					</optgroup>
+				    <optgroup class="reg-classes" label = "Искусство">
+						<option value ="painting">Живопись</option>
+						<option value ="vokals">Вокал</option>
+						<option value ="dancing">Хореография</option>
+					</optgroup>	
+				</select>
+				<input class="form__name" type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input class="form__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона" required>
+				<input class="form__submit" type="submit" value="Записаться">				
+			</form>		
+		</div>	
+		<!--форма записи на мероприятие-->	
+		<input type="checkbox" id="reg-events-check">		
+		<div class="form-wrapper">			
+			<form class="form registration" action="#" method="POST">
+				<label class="registration__close" for="reg-events-check"></label>
+				<p class="form__title">Записаться на мероприятие</p>
+				<select class="form__classes" name="classes" placeholder="Мероприятие" required>
+					<option value =""></option>
+					<option value ="sun-for-mom">Солнышко для мамы</option>
+					<option value ="come-on-girls">А ну-ка, девочки!</option>
+					<option value ="bouquet-for-teacher">Букет для учителя</option>
+				</select>
+				<input class="form__name" type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input class="form__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона" required>
+				<input class="form__submit" type="submit" value="Записаться">				
+			</form>		
+		</div>				
+	</main>
 		<!--contacts-->
-		<footer class="footer">
+		<footer class="footer" id="contacts">
 			<div class="content">
 				<h2 class="section__title">Контакты</h2>
 				<div class="contacts">
@@ -360,12 +410,12 @@
 						</div>
 						<div class="contacts__question">
 							<p>Остались вопросы?</p>
-							<form action="#" method="POST" class="form-question">
-								<input class="form-question__name" type="text" name="name" id="name" placeholder="Ваше имя">
-								<input class="form-question__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона">
-								<textarea class="form-question__question" name="question" id="question" cols="30" rows="5"
-									placeholder="Ваш вопрос"></textarea>
-								<input class="form-question__submit" type="submit" value="Задать вопрос">
+							<form action="#" method="POST" class="form">
+								<input class="form__name" type="text" name="name" id="name" placeholder="Ваше имя" required>
+								<input class="form__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона" required>
+								<textarea class="form__question" name="question" id="question" cols="30" rows="5"
+									placeholder="Ваш вопрос" required></textarea>
+								<input class="form__submit question__submit" type="submit" value="Задать вопрос">
 							</form>
 						</div>
 					</div>
@@ -380,7 +430,6 @@
 				<p class="copyright">&copy;2021</p>
 			</div>
 		</footer>
-	</main>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/slider.js"></script>
 </body>

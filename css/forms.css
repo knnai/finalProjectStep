@@ -1,0 +1,136 @@
+/*
+COLORS
+#307b9b - blue
+#ffb800 - orange
+##ffecec - background pink
+
+Button linear-gradient
+top FBD079
+bottom EEA82A
+*/
+
+/*common*/
+[class^="form"]{
+	font-family: "Neucha", cursive;
+	font-size: 20px;	
+	width: 100%;
+	resize: none;
+	outline-style: none;
+	border: 1px solid #ffb800;
+	border-radius: 5px;
+	color: #307b9b;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+}
+/*
+[class^="form_"]{
+	width: 95%;
+}
+[required] + span::before{
+	content: " *";
+	color: red;
+}
+*/
+.form{
+	border: none;
+	padding: 0;
+}	
+
+.form__title{
+	font-weight: bold;
+	border: none;	
+	text-align: center;
+}
+
+.form__submit {
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	padding: 10px 20px;
+	color: white;
+	font-weight: bold;
+	border-radius: 20px;
+	background-image: linear-gradient(#fbd079, #eea82a);
+	box-shadow: 0 5px 5px -3px grey;
+	cursor: pointer;
+	transition: color .5s;
+}
+.form__submit:hover {
+	color: #307b9b;
+}
+
+
+/*question-form*/
+.question__submit {
+	width: 150px;
+}
+
+/*registration-form*/
+.form-wrapper{
+	position: fixed;
+	background-color: rgba(48, 123, 155, .8);
+	top: 0;
+	left: 0;
+	width: 100vw;
+	min-width: 320px;
+	height: 100vh;	
+	z-index: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+
+.registration{
+	width: 30%;
+	min-width: 290px;	
+	background-color: white;
+	border: 2px solid #ffb800;
+	border-radius: 15px;
+	position: relative;
+}
+#reg-classes-check,
+#reg-events-check{
+	display: none;
+}
+#reg-classes-check:checked + .form-wrapper{
+	visibility: visible;	
+}
+#reg-events-check:checked + .form-wrapper{
+	visibility: visible;	
+}
+
+.registration__close{
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #ffb800;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+	transition: background-color .5s;
+}
+.registration__close::before,
+.registration__close::after{
+	content: "";
+	position: absolute;
+	width: 80%;
+	height: 4px;
+	top: 50%;
+	left: 50%;	
+	background-color: #ffb800;
+	border-radius: 2px;
+}
+
+.registration__close::before{
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.registration__close::after{
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.registration__close:hover{
+	background-color: #307b9b;
+}

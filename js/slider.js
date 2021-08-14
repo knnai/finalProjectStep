@@ -48,6 +48,7 @@ $(document).ready(function () {
 	let sucessesInterval = 3000;
 	let sucessesSlider = new Slider($('.successes .block-for-slider'));
 	let sucessesIdInterval = setInterval(() => { sucessesSlider.nextSlide() }, sucessesInterval);
+	//let sucessesIdInterval = setInterval(sucessesSlider.nextSlide, sucessesInterval);
 	$('.successes .next-btn').click(function () {
 		sucessesSlider.nextSlide();
 	});
@@ -65,6 +66,7 @@ $(document).ready(function () {
 	let reviewsInterval = 5000;
 	let reviewsSlider = new Slider($('.reviews .block-for-slider'));
 	let reviewsIdInterval = setInterval(() => { reviewsSlider.nextSlide() }, reviewsInterval);
+	//let reviewsIdInterval = setInterval(reviewsSlider.nextSlide, reviewsInterval);
 	$('.reviews .next-btn').click(function () {
 		reviewsSlider.nextSlide();
 	});

@@ -25,6 +25,11 @@ body {
 	clear: both;
 }
 
+.box__button {	
+	padding: 20px;
+	text-align: center;
+}
+.label-button,
 .button {
 	text-decoration: none;
 	padding: 10px 20px;
@@ -33,16 +38,25 @@ body {
 	border-radius: 20px;
 	background-image: linear-gradient(#fbd079, #eea82a);
 	box-shadow: 0 5px 5px -3px grey;
-	transition: color 1s;
+	cursor: pointer;
+	transition: color .5s;
 }
+.label-button:hover,
 .button:hover {
 	color: #307b9b;
+}
+.label-button{
+	display: block;
+	width: 150px;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .content {
 	width: 80%;
 	margin: 0 auto;
 	max-width: 1440px;
+	min-width: 300px;
 }
 .main {
 	min-width: 320px;
@@ -52,9 +66,11 @@ body {
 	/*padding: 20px;*/
 	padding: 10px;
 	min-width: 320px;
-	position: sticky;
+	/*position: sticky;*/
+	position: fixed;
+	width: 100%;
 	top: 0;
-	z-index: 10;
+	z-index: 3;
 	background-image: linear-gradient(0deg, #ffecec 0%, white 40%, white 60%, #ffecec 100%);
 	box-shadow: 0 0 5px 0px #307b9b;
 }
@@ -124,7 +140,7 @@ body {
 .menu__item a {
 	text-decoration: none;
 	display: block;
-	padding: 10px 5px;
+	padding: 10px 4px;
 	font-weight: bold;
 	color: #ffb800;
 	font-size: 0.95em;
@@ -239,12 +255,24 @@ label[for="burger"] > span:nth-child(3) {
 	background: url("../img/hr.png") center/cover no-repeat;
 	top: 100%;
 }
-.home,
+
+.home{
+	background-color: #ffecec;
+}
 .classes,
 .art,
 .events,
 .reviews {
-	background-color: #ffecec;
+	/*background-color: #ffecec;*/
+	background: url("../img/background-border-wp.png") repeat-x #ffecec;
+}
+.about,
+.languages,
+.successes,
+.gallery,
+.footer {
+	/*background-color: #ffecec;*/
+	background: url("../img/background-border-pw.png") repeat-x #ffffff;
 }
 
 /*home*/
@@ -266,7 +294,7 @@ label[for="burger"] > span:nth-child(3) {
 	font-weight: bold;
 }
 .box {
-	padding: 40px 0;
+	/*padding: 10px 0;*/
 }
 .home .box__img {
 	width: 50%;
@@ -297,11 +325,7 @@ label[for="burger"] > span:nth-child(3) {
 	font-size: 32px;
 }
 
-.box__button {
-	padding: 20px;
-	text-align: center;
-}
-.home .box__button {
+.home .label-button {
 	transform: scale(0);
 	animation: scale 1s linear 1.8s forwards;
 }
@@ -319,11 +343,20 @@ label[for="burger"] > span:nth-child(3) {
 	animation: moveToRightIn 1s linear 1.2s forwards;
 }
 
-section,
+.home,
+.about,
+.classes,
+.languages,
+.art,
+.successes,
+.events,
+.gallery,
+.reviews,
 .footer {
 	width: 100%;
+	min-width: 320px;
 	/*padding: 40px 20px;*/
-	padding: 20px 10px;
+	padding: 70px 10px 10px;
 }
 /*about*/
 .about .box__img {
@@ -361,7 +394,62 @@ section,
 .item__img {
 	width: 100%;
 }
+/**/
+.item__link::before{
+	content:"";
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+	height: 25%;
+	width: 85%;
+	border: 5px solid orange;
+	border-radius: 10px;
+	transition: 0.5s;	
+}
+.item__link:hover::before {
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 15px 0 orange;
+}
+.classes .item:nth-child(1) .item__link::before {
+	border: 5px solid red;
+	box-shadow: 0 0 15px 0 red;
+}
+.classes .item:nth-child(2) .item__link::before {
+	border: 5px solid green;
+	box-shadow: 0 0 15px 0 green;
+}
+.classes .item:nth-child(3) .item__link::before {
+	border: 5px solid blue;
+	box-shadow: 0 0 15px 0 blue;
+}
+.languages .item:nth-child(2) .item__link::before {
+	border: 5px solid red;
+	box-shadow: 0 0 15px 0 red;
+}
+.languages .item:nth-child(3) .item__link::before {
+	border: 5px solid green;
+	box-shadow: 0 0 15px 0 green;
+}
+.languages .item:nth-child(1) .item__link::before {
+	border: 5px solid blue;
+	box-shadow: 0 0 15px 0 blue;
+}
 
+.art .item:nth-child(3) .item__link::before {
+	border: 5px solid red;
+	box-shadow: 0 0 15px 0 red;
+}
+.art .item:nth-child(1) .item__link::before {
+	border: 5px solid green;
+	box-shadow: 0 0 15px 0 green;
+}
+.art .item:nth-child(2) .item__link::before {
+	border: 5px solid blue;
+	box-shadow: 0 0 15px 0 blue;
+}
+/**/
+/*
 .item__frame {
 	position: absolute;
 	bottom: 0%;
@@ -371,7 +459,7 @@ section,
 	border: 5px solid orange;
 	border-radius: 10px;
 	transition: 0.5s;
-	cursor: pointer;
+	cursor: pointer;	
 }
 .item:hover > .item__frame {
 	width: 100%;
@@ -417,7 +505,7 @@ section,
 	border: 5px solid blue;
 	box-shadow: 0 0 15px 0 blue;
 }
-
+*/
 /*successes*/
 .block-for-slider {
 	width: 80%;
@@ -699,10 +787,10 @@ section,
 }
 /*contacts*/
 .contacts {
-	margin: 40px;
-	padding: 40px 20px;
+	margin: 40px 0;
+	padding: 20px 0px;
 	border: 1px solid #ffb800;
-	border-radius: 40px;
+	border-radius: 15px;
 }
 .contacts__description,
 .contacts__map {
@@ -757,55 +845,13 @@ section,
 	margin: 0 10px;
 }
 
-.form-question,
-.form-question__name,
-.form-question__tel,
-.form-question__question,
-.form-question__submit {
-	font-family: "Neucha", cursive;
-	font-size: 20px;
-}
 
-.form-question,
-.form-question__name,
-.form-question__tel,
-.form-question__question {
-	width: 100%;
-	resize: none;
-}
-
-.form-question__name,
-.form-question__tel,
-.form-question__question,
-.form-question__submit {
-	outline-style: none;
-	border: 1px solid #ffb800;
-	border-radius: 5px;
-	color: #307b9b;
-	margin-bottom: 10px;
-	padding: 5px 10px;
-}
-.form-question__submit {
-	display: block;
-	width: 200px;
-	margin: 0 auto;
-	padding: 10px 20px;
-	color: white;
-	font-weight: bold;
-	border-radius: 20px;
-	background-image: linear-gradient(#fbd079, #eea82a);
-	box-shadow: 0 5px 5px -3px grey;
-	transition: 1s;
-}
-.form-question__submit:hover {
-	color: #307b9b;
-}
-
-.contacts__map {
+.contacts__map {	
 	overflow: hidden;
 	padding-bottom: 50%;
 	position: relative;
 	height: 0;
+	min-height: 320px;
 	border: 1px solid #ffb800;
 	border-radius: 10px;
 }
@@ -827,6 +873,7 @@ section,
 .copyright {
 	margin-top: 20px;
 	text-align: center;
+	color: #307b9b;
 }
 
 /*---АДАПТИВ---*/
@@ -835,6 +882,9 @@ section,
 	.nav,
 	.content {
 		width: 100%;
+	}
+	.content {
+		padding: 10px 10px;
 	}
 	.menu__item a {
 		font-size: 0.85em;
@@ -898,14 +948,16 @@ section,
 
 	.item {
 		width: 90%;
-		margin: 0 auto;
+		padding: 0 10px;
+		margin: 15px auto;
 	}
 
 	.item__link {
 		font-size: 1.3em;
 	}
-	.item__frame {
+	.item__link::before {
 		width: 100%;
+		height: 15%;
 	}
 	/*successes*/
 	.prev-btn {

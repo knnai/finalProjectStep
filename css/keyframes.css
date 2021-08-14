@@ -74,7 +74,7 @@
 	}
 }
 
-/*вращение*/
+/*вращение от +XXdeg до -XXdeg*/
 @keyframes animPhoto {
 	0% {
 		transform: rotate(12deg);
@@ -83,3 +83,18 @@
 		transform: rotate(-12deg);
 	}
 }
+
+/*вращение по оси Y */
+@keyframes rotateY360 {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(359deg);
+	}
+}
+
+
+
+
+

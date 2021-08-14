@@ -1,8 +1,12 @@
-/*--общие--*/
-body {
-	width: 100vw;
-	height: 50vh;
+
+body{
 	background-color: #ffecec;
+}
+.err404-wrapper {
+	width: 100%;
+	height: calc(100vh - 70px);
+	background-color: #ffecec;
+	
 }
 
 .err404__title {
@@ -30,66 +34,64 @@ body {
 	background: url("../img/hr.png") center/cover no-repeat;
 }
 
-.box404__img {
-	width: 20%;
-	display: block;
-}
-.box404__text {
-	text-align: center;
-	padding: 10%;
-	font-size: 32px;
+.box404{
+	display: flex;
+	justify-content: center;
+    align-items: center
 }
 
 .box404:nth-child(even) .box404__img {
-	margin-right: 20%;
-	float: right;
+	order: 1;
 }
 
-.box404:nth-child(even) .box404__text {
-	width: 60%;
-	float: right;
-	color: #307b9b;
-}
-.box404:nth-child(odd) .box404__img {
-	margin-left: 20%;
-	float: left;
-}
-
-.box404:nth-child(odd) .box404__text {
-	width: 60%;
-	float: left;
+.box404__text {
+	text-align: center;
+	padding: 5%;
+	font-size: 32px;
 	color: #307b9b;
 }
 
 .box404__button {
 	margin-top: 50px;
-	font-size: 16px;
-}
-
-@media screen and (max-width: 1440px) {
-	.box404__img {
-		width: 40%;
-	}
-	.box404:nth-child(even) .box404__img {
-		margin-right: 0;
-	}
-	.box404:nth-child(odd) .box404__img {
-		margin-left: 0;
-	}
 }
 
 @media screen and (max-width: 768px) {
-	.box404__img {
-		width: 90%;
+	.err404__title {
+		font-size: 28px;
 	}
-	.box404:nth-child(even) .box404__img,
-	.box404:nth-child(odd) .box404__img,
-	.box404:nth-child(even) .box404__text,
-	.box404:nth-child(odd) .box404__text {
-		float: none;
-		margin: 0 auto;
+	.err404__title span::after {
+		height: 15px;
 	}
-	.box404:nth-child(odd) .box404__img {
-		margin-left: 0;
+	.box404{
+		display: block;
+		text-align: center;
+	}
+	.box404__img{
+		width: 80%;
+	}
+	.box404__text {
+		font-size: 28px;
+		padding: 0;
 	}
 }
+@media screen and (max-width: 425px) {
+	.err404__title {
+		font-size: 18px;
+	}
+	.err404__title span::after {
+		height: 15px;
+	}
+	.box404{
+		display: block;
+		text-align: center;
+	}
+	.box404__img{
+		width: 80%;
+	}
+	.box404__text {
+		font-size: 20px;
+		padding: 0;
+	}
+}
+
+
