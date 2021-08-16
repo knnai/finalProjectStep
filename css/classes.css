@@ -140,7 +140,8 @@ bottom EEA82A
 }
 
 @media screen and (max-width: 425px) {
-	.classes__img {
+	.classes__content:nth-of-type(odd) .classes__img,
+	.classes__content:nth-of-type(even) .classes__img {
 		float: none;
 		width: 90%;
 		margin: 10px auto;
