@@ -34,6 +34,7 @@ body {
 	text-decoration: none;
 	padding: 10px 20px;
 	color: white;
+	font-size: 24px;
 	font-weight: bold;
 	border-radius: 20px;
 	background-image: linear-gradient(#fbd079, #eea82a);
@@ -45,11 +46,15 @@ body {
 .button:hover {
 	color: #307b9b;
 }
+.button__wrapper{
+	text-align: center;
+	padding: 20px 0;
+}
 .label-button{
-	display: block;
+	/*display: block;*/
 	width: 150px;
 	text-align: center;
-	margin: 0 auto;
+	margin: 10px auto;
 }
 
 .content {
@@ -175,7 +180,6 @@ label[for="burger"] {
 	height: 55px;
 	float: right;
 	position: relative;
-
 	border: 1px solid #ffb800;
 	border-radius: 4px;
 	z-index: 10;
@@ -216,7 +220,8 @@ label[for="burger"] > span:nth-child(3) {
 	transform: rotate(-45deg);
 }
 #burger:checked ~ .menu {
-	opacity: 1;
+	visibility: visible;
+	opacity: 1;	
 }
 /*--end burger--*/
 
@@ -294,7 +299,7 @@ label[for="burger"] > span:nth-child(3) {
 	font-weight: bold;
 }
 .box {
-	/*padding: 10px 0;*/
+	padding: 15px 0;
 }
 .home .box__img {
 	width: 50%;
@@ -302,45 +307,51 @@ label[for="burger"] > span:nth-child(3) {
 	/*transform: scale(0);
 	animation: scale 1s linear 1s forwards;*/
 	position: relative;
-	right: -150%;
-	animation: moveToLeftIn 1s linear 1s forwards;
-}
-.box__text {
-	width: 50%;
-	float: right;
-}
-.home .box__text p {
-	text-align: justify;
-	margin: 20px 0;
-	color: #307b9b;
-	font-size: 1.6em;
-	position: relative;
-	left: -150%;
+	/*right: -150%;
+	animation: moveToLeftIn 1s linear 1s forwards;*/
+	right: 0px;
+	transform: scale(0);
+	animation: scale 1s linear 1.2s forwards;
 }
 
-.home .box__text span {
+.box__text {
+	text-align: justify;
+	margin: 10px 0;
+	color: #307b9b;
+	font-size: 1.4em;
+	position: relative;	
+}
+.box__text span {
 	text-transform: uppercase;
 	color: #ffb800;
 	font-weight: bold;
 	font-size: 32px;
 }
 
-.home .label-button {
-	transform: scale(0);
-	animation: scale 1s linear 1.8s forwards;
+
+.home .box__text{
+	left: -150%;
+}
+.home .button__wrapper {
+	position: relative;
+	left: -150%;
+	animation: moveToRightIn 1s linear 1.7s forwards;
 }
 
-.home p:nth-child(1) {
+.home .box__text:nth-of-type(1) {
 	animation: moveToRightIn 1s linear 0.5s forwards;
 }
-.home p:nth-child(2) {
+.home .box__text:nth-of-type(2) {
 	animation: moveToRightIn 1s linear 0.7s forwards;
 }
-.home p:nth-child(3) {
+.home .box__text:nth-of-type(3) {
 	animation: moveToRightIn 1s linear 0.9s forwards;
 }
-.home p:nth-child(4) {
+.home .box__text:nth-of-type(4) {
 	animation: moveToRightIn 1s linear 1.2s forwards;
+}
+.home .box__text:nth-of-type(5) {
+	animation: moveToRightIn 1s linear 1.5s forwards;
 }
 
 .home,
@@ -356,18 +367,10 @@ label[for="burger"] > span:nth-child(3) {
 	width: 100%;
 	min-width: 320px;
 	/*padding: 40px 20px;*/
-	padding: 70px 10px 10px;
+	padding: 75px 10px 10px;
 }
 /*about*/
 .about .box__img {
-	width: 50%;
-	float: left;
-}
-.about .box__text {
-	text-align: justify;
-	margin: 20px 0;
-	color: #307b9b;
-	font-size: 1.1em;
 	width: 50%;
 	float: left;
 }
@@ -381,15 +384,16 @@ label[for="burger"] > span:nth-child(3) {
 .item {
 	display: block;
 	width: 30%;
-	padding: 10px;
-	position: relative;
+	padding: 10px;	
 }
 .item__link {
 	padding: 5px;
 	text-decoration: none;
 	display: block;
 	font-weight: bold;
-	color: #ffb800;
+	color: #307b9b;
+	/*color: #ffb800;*/
+	position: relative;
 }
 .item__img {
 	width: 100%;
@@ -399,7 +403,7 @@ label[for="burger"] > span:nth-child(3) {
 	content:"";
 	position: absolute;
 	bottom: 0%;
-	left: 0;
+	left: -5px;
 	height: 25%;
 	width: 85%;
 	border: 5px solid orange;
@@ -448,78 +452,25 @@ label[for="burger"] > span:nth-child(3) {
 	border: 5px solid blue;
 	box-shadow: 0 0 15px 0 blue;
 }
-/**/
-/*
-.item__frame {
-	position: absolute;
-	bottom: 0%;
-	left: 0;
-	height: 25%;
-	width: 85%;
-	border: 5px solid orange;
-	border-radius: 10px;
-	transition: 0.5s;
-	cursor: pointer;	
-}
-.item:hover > .item__frame {
-	width: 100%;
-	height: 100%;
-	box-shadow: 0 0 15px 0 orange;
-}
 
-.classes .item:nth-child(1) .item__frame {
-	border: 5px solid red;
-	box-shadow: 0 0 15px 0 red;
-}
-.classes .item:nth-child(2) .item__frame {
-	border: 5px solid green;
-	box-shadow: 0 0 15px 0 green;
-}
-.classes .item:nth-child(3) .item__frame {
-	border: 5px solid blue;
-	box-shadow: 0 0 15px 0 blue;
-}
-
-.languages .item:nth-child(2) .item__frame {
-	border: 5px solid red;
-	box-shadow: 0 0 15px 0 red;
-}
-.languages .item:nth-child(3) .item__frame {
-	border: 5px solid green;
-	box-shadow: 0 0 15px 0 green;
-}
-.languages .item:nth-child(1) .item__frame {
-	border: 5px solid blue;
-	box-shadow: 0 0 15px 0 blue;
-}
-
-.art .item:nth-child(3) .item__frame {
-	border: 5px solid red;
-	box-shadow: 0 0 15px 0 red;
-}
-.art .item:nth-child(1) .item__frame {
-	border: 5px solid green;
-	box-shadow: 0 0 15px 0 green;
-}
-.art .item:nth-child(2) .item__frame {
-	border: 5px solid blue;
-	box-shadow: 0 0 15px 0 blue;
-}
-*/
 /*successes*/
 .block-for-slider {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 40px;
 	position: relative;
 }
 
 .viewport {
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
 	user-select: none;
 	text-align: center;
+	border: 1px solid #ffb800;
+	border-radius: 10px;
+	background: white;
 }
 
 .slidewrapper {
@@ -533,6 +484,7 @@ label[for="burger"] > span:nth-child(3) {
 }
 .reviews .slidewrapper {
 	width: calc(100% * 4);
+	
 }
 
 .slidewrapper,
@@ -557,6 +509,7 @@ label[for="burger"] > span:nth-child(3) {
 
 .slide-img {
 	width: 100%;
+	margin-bottom: -7px;
 }
 
 /*prev-next-btns*/
@@ -621,11 +574,13 @@ label[for="burger"] > span:nth-child(3) {
 }
 
 .prev-btn {
-	left: -55px;
+	/*left: -55px;*/
+	left: 0px;
 }
 
 .next-btn {
-	right: -55px;
+	/*right: -55px;*/
+	right: 0px;
 }
 
 /*events*/
@@ -889,6 +844,9 @@ label[for="burger"] > span:nth-child(3) {
 	.menu__item a {
 		font-size: 0.85em;
 	}
+	.viewport {
+		width: 85%;
+	}
 }
 
 /*max-width: 768px*/
@@ -901,7 +859,7 @@ label[for="burger"] > span:nth-child(3) {
 	}
 
 	.menu {
-		width: 80%;
+		width: 90%;
 		min-width: 192px;
 		padding: 15px;
 		position: absolute;
@@ -910,16 +868,16 @@ label[for="burger"] > span:nth-child(3) {
 		border: 1px solid #ffb800;
 		border-radius: 30px;
 		background-color: rgba(255, 255, 255, 0.9);
-		z-index: 1;
+		visibility: hidden;
 		opacity: 0;
-		transition: opacity 0.5s;
+		transition: opacity 0.5s;		
 	}
 	.menu__item {
 		display: block;
 	}
 	.menu__item a {
 		font-size: 20px;
-		padding: 10px;
+		padding: 15px;
 		letter-spacing: 0.2em;
 		text-align: left;
 	}
@@ -940,7 +898,7 @@ label[for="burger"] > span:nth-child(3) {
 	.home .box__text p,
 	.about .box__text p {
 		margin: 0;
-		font-size: 1em;
+		font-size: 30px;
 	}
 	.list {
 		display: block;
@@ -961,11 +919,11 @@ label[for="burger"] > span:nth-child(3) {
 	}
 	/*successes*/
 	.prev-btn {
-		left: -30px;
+		left: -20px;
 	}
 
 	.next-btn {
-		right: -30px;
+		right: -20px;
 	}
 
 	/*events*/

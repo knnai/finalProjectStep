@@ -13,7 +13,7 @@ bottom EEA82A
 [class^="form"]{
 	font-family: "Neucha", cursive;
 	font-size: 20px;	
-	width: 100%;
+	width: 95%;
 	resize: none;
 	outline-style: none;
 	border: 1px solid #ffb800;
@@ -34,6 +34,7 @@ bottom EEA82A
 .form{
 	border: none;
 	padding: 0;
+	text-align: center;
 }	
 
 .form__title{
@@ -45,7 +46,7 @@ bottom EEA82A
 .form__submit {
 	display: block;
 	width: 200px;
-	margin: 0 auto;
+	margin: 0 auto 10px;
 	padding: 10px 20px;
 	color: white;
 	font-weight: bold;

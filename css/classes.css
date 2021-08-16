@@ -36,8 +36,8 @@ bottom EEA82A
 	border: 2px solid #ffb800;
 	border-radius: 20px;
 	float: left;
-	transform: rotateY(15deg);
 }
+
 .classes__content:nth-of-type(even) .classes__img {
 	margin: 0 0 20px 20px;
 	float: right;
@@ -116,7 +116,7 @@ bottom EEA82A
 .classes__video iframe,
 .classes__video video {
 	width: 100%;
-	min-height: 400px;
+	min-height: 300px;
 }
 .classes__description {
 	text-align: justify;
@@ -143,5 +143,6 @@ bottom EEA82A
 	.classes__img {
 		float: none;
 		width: 90%;
+		margin: 10px auto;
 	}
 }
