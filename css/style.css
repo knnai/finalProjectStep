@@ -25,7 +25,7 @@ body {
 	clear: both;
 }
 
-.box__button {	
+.box__button {
 	padding: 20px;
 	text-align: center;
 }
@@ -40,17 +40,17 @@ body {
 	background-image: linear-gradient(#fbd079, #eea82a);
 	box-shadow: 0 5px 5px -3px grey;
 	cursor: pointer;
-	transition: color .5s;
+	transition: color 0.5s;
 }
 .label-button:hover,
 .button:hover {
 	color: #307b9b;
 }
-.button__wrapper{
+.button__wrapper {
 	text-align: center;
 	padding: 20px 0;
 }
-.label-button{
+.label-button {
 	/*display: block;*/
 	width: 150px;
 	text-align: center;
@@ -221,7 +221,7 @@ label[for="burger"] > span:nth-child(3) {
 }
 #burger:checked ~ .menu {
 	visibility: visible;
-	opacity: 1;	
+	opacity: 1;
 }
 /*--end burger--*/
 
@@ -261,12 +261,12 @@ label[for="burger"] > span:nth-child(3) {
 	top: 100%;
 }
 
-.home{
+.home {
 	background-color: #ffecec;
 }
 .classes,
 .art,
-.events,
+.gallery,
 .reviews {
 	/*background-color: #ffecec;*/
 	background: url("../img/background-border-wp.png") repeat-x #ffecec;
@@ -274,7 +274,7 @@ label[for="burger"] > span:nth-child(3) {
 .about,
 .languages,
 .successes,
-.gallery,
+.events,
 .footer {
 	/*background-color: #ffecec;*/
 	background: url("../img/background-border-pw.png") repeat-x #ffffff;
@@ -319,7 +319,7 @@ label[for="burger"] > span:nth-child(3) {
 	margin: 10px 0;
 	color: #307b9b;
 	font-size: 1.4em;
-	position: relative;	
+	position: relative;
 }
 .box__text span {
 	text-transform: uppercase;
@@ -328,8 +328,7 @@ label[for="burger"] > span:nth-child(3) {
 	font-size: 32px;
 }
 
-
-.home .box__text{
+.home .box__text {
 	left: -150%;
 }
 .home .button__wrapper {
@@ -384,7 +383,7 @@ label[for="burger"] > span:nth-child(3) {
 .item {
 	display: block;
 	width: 30%;
-	padding: 10px;	
+	padding: 10px;
 }
 .item__link {
 	padding: 5px;
@@ -399,8 +398,8 @@ label[for="burger"] > span:nth-child(3) {
 	width: 100%;
 }
 /**/
-.item__link::before{
-	content:"";
+.item__link::before {
+	content: "";
 	position: absolute;
 	bottom: 0%;
 	left: -5px;
@@ -408,7 +407,7 @@ label[for="burger"] > span:nth-child(3) {
 	width: 85%;
 	border: 5px solid orange;
 	border-radius: 10px;
-	transition: 0.5s;	
+	transition: 0.5s;
 }
 .item__link:hover::before {
 	width: 100%;
@@ -484,7 +483,6 @@ label[for="burger"] > span:nth-child(3) {
 }
 .reviews .slidewrapper {
 	width: calc(100% * 4);
-	
 }
 
 .slidewrapper,
@@ -800,8 +798,7 @@ label[for="burger"] > span:nth-child(3) {
 	margin: 0 10px;
 }
 
-
-.contacts__map {	
+.contacts__map {
 	overflow: hidden;
 	padding-bottom: 50%;
 	position: relative;
@@ -870,7 +867,7 @@ label[for="burger"] > span:nth-child(3) {
 		background-color: rgba(255, 255, 255, 0.9);
 		visibility: hidden;
 		opacity: 0;
-		transition: opacity 0.5s;		
+		transition: opacity 0.5s;
 	}
 	.menu__item {
 		display: block;
