@@ -202,12 +202,17 @@ p.copyright {
 	.card__info {
 		margin-left: 0;
 	}
+	.card:nth-of-type(odd) .card__info,
+	.card:nth-of-type(even) .card__info {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
 	.card__name {
 		font-size: 1.2em;
 	}
 	.card__prof {
-		margin: 10px 0;
-		font-size: 1em;
+		margin: 15px 0;
+		font-size: 0.8em;
 	}
 }
 
