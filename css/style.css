@@ -121,7 +121,8 @@ body {
 	font-weight: bold;
 	color: #ffb800;
 	right: 0;
-	top: 160%;
+	/* top: 160%; */
+	top: 37px;
 	left: 52px;
 	text-align: center;
 }
