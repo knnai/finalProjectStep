@@ -829,14 +829,14 @@ label[for="burger"] > span:nth-child(3) {
 .contacts__location p,
 .contacts__social p,
 .contacts__question p {
-	color: #307b9b;
-	margin-bottom: 5px;
+	color: hsl(198, 53%, 40%);
+	margin-bottom: 10px;
 }
 
 .contacts__location p:first-child,
 .contacts__social p:first-child,
 .contacts__question p:first-child {
-	margin-top: 5px;
+	margin-top: 10px;
 	font-weight: bold;
 }
 .contacts__location p:first-child {
