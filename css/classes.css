@@ -107,6 +107,7 @@ bottom EEA82A
 .classes__timetable p {
 	color: #307b9b;
 	font-size: 1.2em;
+	margin: 10px auto;
 }
 .classes__timetable p span {
 	text-transform: uppercase;
