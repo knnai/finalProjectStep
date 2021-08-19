@@ -1,5 +1,4 @@
-
-body{
+body {
 	background-color: #ffecec;
 }
 .err404-wrapper {
@@ -7,7 +6,6 @@ body{
 	padding-top: 70px;
 	height: calc(100vh - 70px);
 	background-color: #ffecec;
-	
 }
 
 .err404__title {
@@ -28,17 +26,17 @@ body{
 .err404__title span::after {
 	content: "";
 	position: absolute;
-	width: 300%;
-	left: -100%;
+	width: 200%;
+	left: -50%;
 	top: 90%;
-	height: 24px;
-	background: url("../img/hr.png") center/cover no-repeat;
+	height: 15px;
+	background: url(../img/hr.png) center/cover no-repeat;
 }
 
-.box404{
+.box404 {
 	display: flex;
 	justify-content: center;
-    align-items: center
+	align-items: center;
 }
 
 .box404:nth-child(even) .box404__img {
@@ -53,7 +51,7 @@ body{
 }
 
 .box404__button {
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -61,13 +59,14 @@ body{
 		font-size: 28px;
 	}
 	.err404__title span::after {
-		height: 15px;
+		height: 10px;
 	}
-	.box404{
+	.box404 {
 		display: block;
 		text-align: center;
+		padding: 40px;
 	}
-	.box404__img{
+	.box404__img {
 		width: 80%;
 	}
 	.box404__text {
@@ -82,11 +81,11 @@ body{
 	.err404__title span::after {
 		height: 15px;
 	}
-	.box404{
+	.box404 {
 		display: block;
 		text-align: center;
 	}
-	.box404__img{
+	.box404__img {
 		width: 80%;
 	}
 	.box404__text {
@@ -94,5 +93,3 @@ body{
 		padding: 0;
 	}
 }
-
-
