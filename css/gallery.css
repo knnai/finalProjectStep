@@ -32,9 +32,15 @@ bottom EEA82A
 	border-radius: 10px;
 	transition: box-shadow 0.5s linear;
 }
+
+.material-placeholder {
+	width: 100%; /*materialize*/
+	height: 100%; /*materialize*/
+}
 .gallery-wrapper .image:hover {
 	box-shadow: 0 0 15px 3px #307b9b;
 }
+
 .gallery-wrapper .image img {
 	width: 100%;
 	height: 100%;

@@ -35,16 +35,16 @@ bottom EEA82A
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 40px;	
+	height: 40px;
 }
-.classes__content:nth-of-type(odd)::before{
-	background: url("../img/background-border.png") -200px -160px repeat-x;	
+.classes__content:nth-of-type(odd)::before {
+	background: url("../img/background-border.png") -200px -160px repeat-x;
 }
 .classes__content:nth-of-type(even)::before {
 	background: url("../img/background-border.png") -100px -200px repeat-x;
 }
 .classes__content:first-of-type::before {
-	display:none;
+	display: none;
 }
 
 .classes__img {

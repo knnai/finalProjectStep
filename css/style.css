@@ -20,6 +20,7 @@ bottom EEA82A
 body {
 	font-family: "Neucha", cursive;
 	font-size: 20px;
+	line-height: 1;
 }
 .clear {
 	clear: both;
@@ -57,12 +58,12 @@ body {
 	margin: 10px auto;
 }
 
-.content {
+/*.content {
 	width: 80%;
 	margin: 0 auto;
 	max-width: 1440px;
 	min-width: 300px;
-}
+}*/
 .main {
 	min-width: 320px;
 }
@@ -80,13 +81,16 @@ body {
 	box-shadow: 0 0 5px 0px #307b9b;
 }
 
-.nav {
-	width: 80%;
-	margin: 0 auto;
-	max-width: 1440px;
-	position: relative;
-	/*background-color: white;*/
-	/*display: sticky;*/
+.nav,
+.content {
+	width: 80% !important; /*materialize*/
+	margin: 0 auto !important; /*materialize*/
+	max-width: 1440px !important; /*materialize*/
+	position: relative !important; /*materialize*/
+	background-color: rgba(255, 255, 255, 0) !important; /*materialize*/
+	box-shadow: none !important; /*materialize*/
+	line-height: normal !important; /*materialize*/
+	height: auto !important; /*materialize*/
 }
 
 /*--start логотип--*/
@@ -138,7 +142,7 @@ body {
 .menu {
 	/*background-color: brown;*/
 	list-style: none;
-	width: 75%;
+	/*width: 75%;*/ /*materialize*/
 	text-align: right;
 	float: right;
 }
@@ -202,6 +206,19 @@ body {
 .active > a {
 	color: #307b9b;
 }
+
+nav ul a:hover {
+	background-color: rgba(0, 0, 0, 0) !important; /*materialize*/
+}
+
+nav ul li {
+	float: none !important; /*materialize*/
+}
+
+nav ul li.active {
+	background-color: rgba(0, 0, 0, 0) !important; /*materialize*/
+}
+
 /*--end меню--*/
 /*--start burger--*/
 #burger {
@@ -264,6 +281,7 @@ label[for="burger"] > span:nth-child(3) {
 	text-transform: uppercase;
 	color: #307b9b;
 	font-size: 2em;
+	font-weight: bold;
 	text-align: center;
 	position: relative;
 }
@@ -282,6 +300,7 @@ label[for="burger"] > span:nth-child(3) {
 .section__subtitle {
 	color: #307b9b;
 	font-size: 1.6em;
+	font-weight: bold;
 	text-align: center;
 	position: relative;
 	margin: 25px 0;
@@ -360,6 +379,7 @@ label[for="burger"] > span:nth-child(3) {
 .home__title {
 	color: #307b9b;
 	font-size: 48px;
+	font-weight: bold;
 	text-align: center;
 	transform: scale(0);
 	animation: scale 1s linear 0.5s forwards;
@@ -377,8 +397,6 @@ label[for="burger"] > span:nth-child(3) {
 	width: 50%;
 	float: right;
 	position: relative;
-	/*right: -150%;
-	animation: moveToLeftIn 1s linear 1s forwards;*/
 	right: 0px;
 	transform: scale(0);
 	animation: scale 1s linear 1.2s forwards;
@@ -469,17 +487,18 @@ label[for="burger"] > span:nth-child(3) {
 .item__link::before {
 	content: "";
 	position: absolute;
-	bottom: 0%;
+	bottom: -5px;
 	left: -5px;
 	height: 25%;
-	width: 85%;
+	min-height: 50px;
+	width: calc(100% + 10px);
 	border: 5px solid orange;
 	border-radius: 10px;
 	transition: 0.5s;
 }
 .item__link:hover::before {
-	width: 100%;
-	height: 100%;
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
 	box-shadow: 0 0 15px 0 orange;
 }
 .classes .item:nth-child(1) .item__link::before {
@@ -647,81 +666,19 @@ label[for="burger"] > span:nth-child(3) {
 	right: 0px;
 }
 
-/*events*/
-.event {
-	width: 30%;
-	min-width: 240px;
-	position: relative;
-	/*border: 1px solid #ffb800;*/
-	padding: 10px;
-	overflow: hidden;
-}
-.event__img {
+/*carousel*/
+.carousel {
 	width: 100%;
-	margin-bottom: -4px;
-	border-radius: 20px;
-	box-shadow: 0 0 5px 5px #307b9b;
-	transition: transform 1s;
+	margin: -70px auto 0;
+}
+.carousel .carousel-item {
+	width: 200px;
 }
 
-.event__revers {
-	width: calc(100% - 20px);
-	height: calc(100% - 20px);
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	text-align: center;
-	background-color: white;
-	border-radius: 20px;
-	padding: 25px;
-	box-shadow: 0 0 5px 5px #307b9b;
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	align-items: center;
-	backface-visibility: hidden;
-	transform: rotateY(180deg);
-	transition: transform 1s;
-}
-
-.event__button {
-	padding: 10% 0;
-}
-.event__title {
-	color: #307b9b;
-	font-size: 20px;
-	text-align: center;
-	position: relative;
-}
-.event__title::after {
-	content: "";
-	position: absolute;
-	width: 100px;
-	left: 50%;
-	transform: translateX(-50%);
-	height: 10px;
-	background: url(../img/hr.png) center/cover no-repeat;
-	top: 105%;
-}
-.event__description {
-	color: #307b9b;
-	font-size: 18px;
-	text-align: center;
-	position: relative;
-	margin: 25px 0;
-}
-
-.event:hover .event__img {
-	transform: rotateY(180deg);
-}
-
-.event:hover .event__revers {
-	transform: rotateY(360deg);
-}
 /*gallery*/
 .gallery__viewport {
 	width: 100%;
-	margin: 10% 0 5% 0;
+	margin: 5% 0;
 	text-align: center;
 	white-space: nowrap;
 }
@@ -730,8 +687,8 @@ label[for="burger"] > span:nth-child(3) {
 	display: inline;
 	position: relative;
 	top: 0;
-	width: 20%;
-	margin: 0 -1%;
+	width: 15%;
+	margin: 0;
 	border: 5px solid white;
 	box-shadow: 0 0 5px 5px black;
 	filter: grayscale(0.5);
@@ -820,7 +777,6 @@ label[for="burger"] > span:nth-child(3) {
 .contacts__map {
 	width: 46%;
 	margin: 0 2%;
-	/*float: left;*/
 }
 
 .footer .section__title {
@@ -945,7 +901,7 @@ label[for="burger"] > span:nth-child(3) {
 @media screen and (max-width: 1024px) {
 	.nav,
 	.content {
-		width: 100%;
+		width: 100% !important; /*materialize*/
 	}
 	.content {
 		padding: 10px 10px;
@@ -1044,8 +1000,8 @@ label[for="burger"] > span:nth-child(3) {
 		font-size: 1.3em;
 	}
 	.item__link::before {
-		width: 100%;
-		height: 15%;
+		/*width: calc(100% + 10px);*/
+		height: 20%;
 	}
 	/*successes*/
 	.prev-btn {
@@ -1055,13 +1011,6 @@ label[for="burger"] > span:nth-child(3) {
 	.next-btn {
 		right: -20px;
 	}
-
-	/*events*/
-	.event {
-		width: 90%;
-		margin: 25px auto;
-	}
-
 	.contacts__description,
 	.contacts__map {
 		width: 96%;

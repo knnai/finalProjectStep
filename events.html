@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Одаренок - Мероприятия</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<!-- для отображения иконок подключаем шрифты онлайн -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- подключение стилевого файла фреймворка Materialize -->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/keyframes.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<link rel="stylesheet" href="css/events.css">
+</head>
+
+<body>
+	<header class="header">
+		<nav class="nav">
+			<div class="logo">
+				<a href="index.html" class="logo__link">
+					<img src="img/logo.png" alt="Логотип" class="logo__img">
+					одарёнок
+				</a>
+			</div>
+
+			<input type="checkbox" id="burger">
+			<label for="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<ul class="menu">
+				<li class="menu__item"><a href="about.html">О нас</a></li>
+				<li class="menu__item"><a href="classes.html">Занятия&#9662;</a>
+					<ul class="submenu">
+						<li class="submenu__item"><a href="classes.html#classes-small">Развивашки от 12 мес</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-school">Подготовка к школе</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-ma">Ментальная арифметика</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-languages">Иностранные языки</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-painting">Живопись</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-vokals">Вокал</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-dancing">Хореография</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="successes.html">Наши успехи</a></li>
+				<li class="menu__item"><a href="gallery.html">Фотогалерея</a></li>
+				<li class="menu__item active"><a href="events.html">Мероприятия</a></li>
+				<li class="menu__item"><a href="index.html#reviews">Отзывы</a></li>
+				<li class="menu__item"><a href="#contacts">Контакты</a></li>
+			</ul>
+			<div class="clear"></div>
+		</nav>
+	</header>
+
+	<!--main-->
+	<main class="main">
+
+		<!--events-->
+		<section class="events" id="events">
+			<div class="row content">
+				<h2 class="col s12 section__title">Мероприятия</h2>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-1.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;Солнышко для мамы&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-2.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;А ну-ка, девочки!&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-3.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;Букет для учителя&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-1.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;Солнышко для мамы&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-2.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;А ну-ка, девочки!&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-3.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;Букет для учителя&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-1.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;Солнышко для мамы&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-2.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;А ну-ка, девочки!&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-3.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;Букет для учителя&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-1.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;Солнышко для мамы&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-2.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;А ну-ка, девочки!&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4 xl3">
+					<div class="event">
+						<img class="event__img" src="img/event-3.jpg" alt="">
+						<div class="event__revers">
+							<p class="event__title">Мастер класс<br>&laquo;Букет для учителя&raquo;</p>
+							<p class="event__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque corrupti
+								doloribus tempore temporibus repellendus iusto dicta consequatur.</p>
+							<!--<div class="event__button"><a href="#" class="button">Записаться</a></div>-->
+							<label class="label-button" for="reg-events-check">Записаться</label>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<!--форма записи на мероприятие-->
+		<input type="checkbox" id="reg-events-check">
+		<div class="form-wrapper">
+			<form class="form registration" action="#" method="POST">
+				<label class="registration__close" for="reg-events-check"></label>
+				<p class="form__title">Записаться на мероприятие</p>
+				<select class="form__classes browser-default" name="classes" required>
+					<option value disabled selected>Выберите мероприятие...</option>
+					<optgroup class="reg-event" label="Мастер-классы">
+						<option value="sun-for-mom">Солнышко для мамы</option>
+						<option value="come-on-girls">А ну-ка, девочки!</option>
+						<option value="bouquet-for-teacher">Букет для учителя</option>
+					</optgroup>
+				</select>
+				<input class="form__name browser-default" type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input class="form__tel browser-default" type="tel" name="tel" id="tel" placeholder="Номер телефона" required>
+				<input class="form__submit" type="submit" value="Записаться">
+			</form>
+		</div>
+	</main>
+	<!--contacts-->
+	<footer class="footer" id="contacts">
+		<div class="content">
+			<!-- <h2 class="section__title">Контакты</h2> -->
+			<div class="contacts">
+
+				<div class="contacts__description">
+					<h2 class="section__title">Контакты</h2>
+					<div class="contacts__location">
+						<p>Родительский клуб <span>&laquo;одарёнок&raquo;</span></p>
+						<p class="contacts__addr">г.Краматорск, ул.Дворцовая 99</p>
+						<a class="contacts__tel" href="tel:+380501234567">+38 (050) 123-45-67</a>
+					</div>
+					<div class="contacts__social">
+						<p>Мы в социальных сетях</p>
+						<a class="contacts__soc-link"
+							href="https://www.facebook.com/%D0%9E%D0%B4%D0%B0%D1%80%D0%B5%D0%BD%D0%BE%D0%BA-322667251488063/"
+							target="_blank"></a>
+						<a class="contacts__soc-link" href="#"></a>
+						<a class="contacts__soc-link" href="#"></a>
+					</div>
+					<div class="contacts__question">
+						<p>Остались вопросы?</p>
+						<form action="#" method="POST" class="form">
+							<input class="form__name browser-default" type="text" name="name" id="question-name"
+								placeholder="Ваше имя" required>
+							<input class="form__tel browser-default" type="tel" name="tel" id="question-tel"
+								placeholder="Номер телефона" required>
+							<textarea class="form__question" name="question" id="question" cols="30" rows="5" placeholder="Ваш вопрос"
+								required></textarea>
+							<input class="form__submit question__submit" type="submit" value="Задать вопрос">
+						</form>
+					</div>
+				</div>
+				<div class="contacts__map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.052791669497!2d37.60544011508178!3d48.72358291814411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df96f4271b940b%3A0x5f97e1f3199a2b83!2z0KDQvtC00LjRgtC10LvRjNGB0LrQuNC5INCa0LvRg9CxICLQntC00LDRgNC10L3QvtC6Ig!5e0!3m2!1sru!2sua!4v1628333777778!5m2!1sru!2sua"
+						width="600" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<h2 class="section__subtitle">Спасибо за просмотр!</h2>
+			<p class="copyright">&copy;2021</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/slider.js"></script>
+
+	<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			options = {
+				duration: 200,
+				dist: -30,
+				shift: 0,
+				padding: 70,
+				numVisible: 5,
+				fullWidth: false,
+				indicators: false,
+				noWrap: false,
+				onCycleTo: null
+			};
+
+			var elems = document.querySelectorAll('.carousel');
+			var instances = M.Carousel.init(elems, options);
+		});
+	</script>
+</body>
+
+</html>

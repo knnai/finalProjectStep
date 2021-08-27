@@ -10,71 +10,79 @@ bottom EEA82A
 */
 
 /*common*/
-[class^="form"]{
-	font-family: "Neucha", cursive;
-	font-size: 20px;	
-	width: 95%;
-	resize: none;
-	outline-style: none;
-	border: 1px solid #ffb800;
-	border-radius: 5px;
-	color: #307b9b;
-	margin-bottom: 10px;
-	padding: 5px 10px;
+input[class^="form"],
+textarea[class^="form"],
+p[class^="form"],
+select[class^="form"],
+select[class^="form"] optgroup {
+	/*добавлен тег - materialize*/
+	font-family: "Neucha", cursive !important; /*materialize*/
+	font-size: 20px !important; /*materialize*/
+	width: 95% !important; /*materialize*/
+	resize: none !important; /*materialize*/
+	outline-style: none !important; /*materialize*/
+	border: 1px solid #ffb800 !important; /*materialize*/
+	border-radius: 5px !important; /*materialize*/
+	color: #307b9b; /* !Important; materialize*/
+	margin-bottom: 10px !important; /*materialize*/
+	padding: 5px 10px !important; /*materialize*/
+	height: auto !important; /*materialize*/
+	display: inline-block !important; /*materialize*/
 }
-/*
-[class^="form_"]{
-	width: 95%;
+
+select:invalid,
+::placeholder {
+	color: #d2d2d2;
 }
-[required] + span::before{
-	content: " *";
-	color: red;
-}
-*/
-.form{
+
+.form {
 	border: none;
 	padding: 0;
 	text-align: center;
-}	
+}
 
-.form__title{
+p.form__title {
+	/*добавлен тег - materialize*/
 	font-weight: bold;
-	border: none;	
+	border: none !important; /*materialize*/
 	text-align: center;
 }
 
-.form__submit {
+input.form__submit {
 	display: block;
-	width: 200px;
+	width: 200px !important; /*materialize*/
 	margin: 0 auto 10px;
 	padding: 10px 20px;
 	color: white;
 	font-weight: bold;
-	border-radius: 20px;
+	border-radius: 20px !important; /*materialize*/
 	background-image: linear-gradient(#fbd079, #eea82a);
 	box-shadow: 0 5px 5px -3px grey;
 	cursor: pointer;
-	transition: color .5s;
+	transition: color 0.5s;
 }
-.form__submit:hover {
+input.form__submit:hover {
+	/*добавлен тег - materialize*/
 	color: #307b9b;
 }
 
-
 /*question-form*/
-.question__submit {
-	width: 150px;
+input.question__submit {
+	/*добавлен тег - materialize*/
+	width: 150px !important; /*materialize*/
+	color: #fff;
+	cursor: pointer;
 }
 
 /*registration-form*/
-.form-wrapper{
+.form-wrapper {
 	position: fixed;
-	background-color: rgba(48, 123, 155, .8);
+	background-color: rgba(48, 123, 155, 0.8);
 	top: 0;
 	left: 0;
 	width: 100vw;
 	min-width: 320px;
-	height: 100vh;	
+	height: 100vh;
 	z-index: 4;
 	display: flex;
 	justify-content: center;
@@ -82,26 +90,26 @@ bottom EEA82A
 	visibility: hidden;
 }
 
-.registration{
+.registration {
 	width: 30%;
-	min-width: 290px;	
+	min-width: 290px;
 	background-color: white;
 	border: 2px solid #ffb800;
 	border-radius: 15px;
 	position: relative;
 }
 #reg-classes-check,
-#reg-events-check{
+#reg-events-check {
 	display: none;
 }
-#reg-classes-check:checked + .form-wrapper{
-	visibility: visible;	
+#reg-classes-check:checked + .form-wrapper {
+	visibility: visible;
 }
-#reg-events-check:checked + .form-wrapper{
-	visibility: visible;	
+#reg-events-check:checked + .form-wrapper {
+	visibility: visible;
 }
 
-.registration__close{
+.registration__close {
 	position: absolute;
 	top: -20px;
 	right: -20px;
@@ -111,27 +119,27 @@ bottom EEA82A
 	border-radius: 50%;
 	background-color: white;
 	cursor: pointer;
-	transition: background-color .5s;
+	transition: background-color 0.5s;
 }
 .registration__close::before,
-.registration__close::after{
+.registration__close::after {
 	content: "";
 	position: absolute;
 	width: 80%;
 	height: 4px;
 	top: 50%;
-	left: 50%;	
+	left: 50%;
 	background-color: #ffb800;
 	border-radius: 2px;
 }
 
-.registration__close::before{
+.registration__close::before {
 	transform: translate(-50%, -50%) rotate(45deg);
 }
-.registration__close::after{
+.registration__close::after {
 	transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.registration__close:hover{
+.registration__close:hover {
 	background-color: #307b9b;
 }
