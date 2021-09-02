@@ -143,20 +143,25 @@ p.copyright {
 	display: flex;
 	transition: 1s;
 }
-.advantages-box__img img {
+/*.advantages-box__img img*/
+.advantages-box__img svg {
 	width: 50%;
+	height: 50%;
 	margin: auto;
 	transition: 1s;
+	fill: #fff;
 }
 .advantages-box__img:hover {
 	border: 5px solid #ffb800;
 }
-.advantages-box__img:hover img {
+/* .advantages-box__img:hover img */
+.advantages-box__img:hover svg {
 	transform: rotate(360deg);
+	fill: #ffb800;
 }
 
 .card {
-	width: 95%;
+	width: 100%;
 	min-height: 300px;
 	text-align: center;
 	border-radius: 20px;
@@ -257,12 +262,20 @@ p.copyright {
 		margin-right: 0px !important;
 		margin-left: 0px !important;
 	}
-	.card__name {
+	.main-about p.card__name {
+		text-indent: 0;
+		text-align: center;
 		font-size: 1.2em;
 	}
-	.card__prof {
+	.card__name::after {
+	left: 50%;
+	transform: translateX(-50%);	
+}
+	.main-about p.card__prof {
+		text-indent: 0;
+		text-align: center;
 		margin: 15px 0;
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 }
 

@@ -13,7 +13,7 @@ bottom EEA82A
 @import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 /*общие*/
 * {
-	box-sizing: border-box;
+	box-sizing: border-box!Important; /*materialize*/
 	padding: 0;
 	margin: 0;
 }
@@ -27,6 +27,7 @@ body {
 }
 
 .box__button {
+	margin-top: 30px;
 	padding: 20px;
 	text-align: center;
 }
@@ -64,13 +65,13 @@ body {
 	max-width: 1440px;
 	min-width: 300px;
 }*/
-.main {
+/*.main {
 	min-width: 320px;
-}
+}*/
 /*--header--*/
 .header {
 	/*padding: 20px;*/
-	padding: 10px;
+	padding: 10px 0;
 	min-width: 320px;
 	/*position: sticky;*/
 	position: fixed;
@@ -81,9 +82,10 @@ body {
 	box-shadow: 0 0 5px 0px #307b9b;
 }
 
-.nav,
 .content {
 	width: 80% !important; /*materialize*/
+	min-width: 320px;
+	padding: 0 10px;
 	margin: 0 auto !important; /*materialize*/
 	max-width: 1440px !important; /*materialize*/
 	position: relative !important; /*materialize*/
@@ -146,7 +148,11 @@ body {
 	text-align: right;
 	float: right;
 }
-/*17082021*/
+.menu__item:nth-of-type(2)>a::after{
+	content:"\25BC";
+	font-size: .8em;
+}
+
 .menu__item > .submenu {
 	list-style: none;
 	position: absolute;
@@ -228,6 +234,7 @@ label[for="burger"] {
 	display: none;
 	width: 55px;
 	height: 55px;
+	/*right: 10px;*/
 	float: right;
 	position: relative;
 	border: 1px solid #ffb800;
@@ -284,6 +291,7 @@ label[for="burger"] > span:nth-child(3) {
 	font-weight: bold;
 	text-align: center;
 	position: relative;
+	margin: 20px 0;
 }
 
 .section__title::after {
@@ -335,8 +343,7 @@ label[for="burger"] > span:nth-child(3) {
 	position: relative;
 }
 .footer {
-	background: url("https://v-variant.com.ua/uploads/posts/2020-07/1595332635_110325473_1085105681891992_1206441472243599742_o.jpg")
-		center/cover no-repeat fixed;
+	background: url("https://v-variant.com.ua/uploads/posts/2020-07/1595332635_110325473_1085105681891992_1206441472243599742_o.jpg") center/cover no-repeat fixed;
 	position: relative;
 }
 .about::before,
@@ -406,7 +413,7 @@ label[for="burger"] > span:nth-child(3) {
 	text-align: justify;
 	margin: 10px 0;
 	color: #307b9b;
-	font-size: 1.4em;
+	font-size: 1.35em;
 	position: relative;
 }
 .box__text span {
@@ -420,6 +427,7 @@ label[for="burger"] > span:nth-child(3) {
 	left: -150%;
 }
 .home .button__wrapper {
+	margin-top: 30px;
 	position: relative;
 	left: -150%;
 	animation: moveToRightIn 1s linear 1.7s forwards;
@@ -453,7 +461,8 @@ label[for="burger"] > span:nth-child(3) {
 .footer {
 	width: 100%;
 	min-width: 320px;
-	padding: 75px 10px 20px;
+	/*padding: 75px 10px 30px;*/
+	padding: 75px 0 30px;
 }
 /*about*/
 .about .box__img {
@@ -548,8 +557,8 @@ label[for="burger"] > span:nth-child(3) {
 }
 
 .viewport {
-	width: 90%;
-	margin: 0 auto;
+	width: calc(100% - 80px);
+	margin: 0 auto 20px auto;
 	position: relative;
 	overflow: hidden;
 	user-select: none;
@@ -603,7 +612,7 @@ label[for="burger"] > span:nth-child(3) {
 	position: absolute;
 	width: 50px;
 	height: 50px;
-	background-image: linear-gradient(#fbd079, #eea82a);
+	/*background-image: linear-gradient(#fbd079, #eea82a);*/
 	border-radius: 50%;
 	top: 50%;
 	transform: translateY(-50%);
@@ -617,7 +626,7 @@ label[for="burger"] > span:nth-child(3) {
 	position: absolute;
 	width: 40%;
 	height: 10%;
-	background-color: white;
+	background-color: #ffb800;
 	transition: 0.5s;
 }
 .prev-btn::before {
@@ -650,6 +659,7 @@ label[for="burger"] > span:nth-child(3) {
 .next-btn:hover {
 	cursor: pointer;
 	box-shadow: 0 0px 10px 4px #307b9b;
+	background: white;
 }
 .prev-btn:hover::before,
 .prev-btn:hover::after,
@@ -678,7 +688,8 @@ label[for="burger"] > span:nth-child(3) {
 /*gallery*/
 .gallery__viewport {
 	width: 100%;
-	margin: 5% 0;
+	/*margin: 5% 0;*/
+	padding: 40px 0;
 	text-align: center;
 	white-space: nowrap;
 }
@@ -687,7 +698,7 @@ label[for="burger"] > span:nth-child(3) {
 	display: inline;
 	position: relative;
 	top: 0;
-	width: 15%;
+	width: 18%;
 	margin: 0;
 	border: 5px solid white;
 	box-shadow: 0 0 5px 5px black;
@@ -762,6 +773,7 @@ label[for="burger"] > span:nth-child(3) {
 	content: "\201D";
 }
 /*contacts*/
+
 .contacts {
 	margin: 40px 0;
 	padding: 20px 0px;
@@ -851,6 +863,7 @@ label[for="burger"] > span:nth-child(3) {
 }
 .contacts__soc-link:nth-of-type(1) {
 	background-position: 0px 0px;
+	margin-left: 0;
 }
 .contacts__soc-link:nth-of-type(2) {
 	background-position: -40px 0;
@@ -887,7 +900,7 @@ label[for="burger"] > span:nth-child(3) {
 }
 
 .footer .section__subtitle {
-	color: #fff;
+	color: #fff;		
 }
 
 .copyright {
@@ -899,12 +912,11 @@ label[for="burger"] > span:nth-child(3) {
 /*---АДАПТИВ---*/
 /*max-width: 1024px*/
 @media screen and (max-width: 1024px) {
-	.nav,
 	.content {
 		width: 100% !important; /*materialize*/
 	}
 	.content {
-		padding: 10px 10px;
+		/*padding: 10px 10px;*/
 	}
 	.menu__item a {
 		font-size: 0.85em;
@@ -913,15 +925,12 @@ label[for="burger"] > span:nth-child(3) {
 		width: 100%;
 	}
 	.viewport {
-		width: 85%;
+		/*width: 85%;*/
 	}
 }
 
 /*max-width: 768px*/
 @media screen and (max-width: 768px) {
-	.nav {
-		width: 100%;
-	}
 	label[for="burger"] {
 		display: block;
 	}
@@ -932,7 +941,7 @@ label[for="burger"] > span:nth-child(3) {
 		padding: 15px;
 		position: absolute;
 		top: -5px;
-		right: -5px;
+		right: 5px;
 		border: 1px solid #ffb800;
 		border-radius: 30px;
 		background-color: rgba(255, 255, 255, 0.9);
@@ -941,12 +950,16 @@ label[for="burger"] > span:nth-child(3) {
 		transition: opacity 0.5s;
 	}
 	.menu__item > .submenu {
+		/*
 		position: static;
 		width: 100%;
 		border: none;
 		background: none;
-		padding-left: 40px;
-		/*display: none;*/
+		padding-left: 40px;*/
+		display: none;
+	}
+	.menu__item:nth-of-type(2)>a::after{
+		content:"";
 	}
 	.menu__item > .submenu::before {
 		display: none;
@@ -957,7 +970,7 @@ label[for="burger"] > span:nth-child(3) {
 	}
 	.menu__item > a {
 		font-size: 20px;
-		padding: 10px;
+		padding: 10px 0 10px 30px;		
 		letter-spacing: 0.2em;
 		text-align: left;
 	}
@@ -991,7 +1004,7 @@ label[for="burger"] > span:nth-child(3) {
 	}
 
 	.item {
-		width: 90%;
+		width: 100%;
 		padding: 0 10px;
 		margin: 15px auto;
 	}
@@ -1005,11 +1018,11 @@ label[for="burger"] > span:nth-child(3) {
 	}
 	/*successes*/
 	.prev-btn {
-		left: -20px;
+		/*left: -20px;*/
 	}
 
 	.next-btn {
-		right: -20px;
+		/*right: -20px;*/
 	}
 	.contacts__description,
 	.contacts__map {

@@ -18,13 +18,13 @@ select[class^="form"] optgroup {
 	/*добавлен тег - materialize*/
 	font-family: "Neucha", cursive !important; /*materialize*/
 	font-size: 20px !important; /*materialize*/
-	width: 95% !important; /*materialize*/
+	width: 100%;
 	resize: none !important; /*materialize*/
 	outline-style: none !important; /*materialize*/
 	border: 1px solid #ffb800 !important; /*materialize*/
 	border-radius: 5px !important; /*materialize*/
 	color: #307b9b; /* !Important; materialize*/
-	margin-bottom: 10px !important; /*materialize*/
+	margin-bottom: 15px !important; /*materialize*/
 	padding: 5px 10px !important; /*materialize*/
 	height: auto !important; /*materialize*/
 	display: inline-block !important; /*materialize*/
@@ -51,7 +51,7 @@ p.form__title {
 input.form__submit {
 	display: block;
 	width: 200px !important; /*materialize*/
-	margin: 0 auto 10px;
+	margin: 10px auto 10px;
 	padding: 10px 20px;
 	color: white;
 	font-weight: bold;
@@ -67,6 +67,9 @@ input.form__submit:hover {
 }
 
 /*question-form*/
+#question-name{
+	width: 100%;
+}
 input.question__submit {
 	/*добавлен тег - materialize*/
 	width: 150px !important; /*materialize*/
@@ -87,12 +90,13 @@ input.question__submit {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	visibility: hidden;
+	visibility: hidden;	
 }
 
 .registration {
-	width: 30%;
+	width: 25%;
 	min-width: 290px;
+	padding: 20px 20px 10px;
 	background-color: white;
 	border: 2px solid #ffb800;
 	border-radius: 15px;

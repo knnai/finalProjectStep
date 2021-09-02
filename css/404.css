@@ -2,10 +2,14 @@ body {
 	background-color: #ffecec;
 }
 .err404-wrapper {
-	width: 100%;
-	padding-top: 70px;
-	height: calc(100vh - 70px);
-	background-color: #ffecec;
+    width: 100%;
+    padding: 70px 0 20px;
+    height: 100vh;
+	text-align: center;
+    background-color: #ffecec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .err404__title {
@@ -35,8 +39,9 @@ body {
 
 .box404 {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+    justify-content: space-around;
+    align-items: center;
+	text-align: center;
 }
 
 .box404:nth-child(even) .box404__img {
@@ -46,12 +51,19 @@ body {
 .box404__text {
 	text-align: center;
 	padding: 5%;
-	font-size: 32px;
+	font-size: 40px;
 	color: #307b9b;
 }
 
 .box404__button {
 	margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+	.box404__text {
+		font-size: 34px;
+		padding: 0;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -61,22 +73,17 @@ body {
 	.err404__title span::after {
 		height: 10px;
 	}
+	.err404-wrapper,
 	.box404 {
 		display: block;
-		text-align: center;
-		padding: 40px;
 	}
 	.box404__img {
-		width: 80%;
-	}
-	.box404__text {
-		font-size: 28px;
-		padding: 0;
+		width: 70%;
 	}
 }
 @media screen and (max-width: 425px) {
 	.err404__title {
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.err404__title span::after {
 		height: 7px;
@@ -89,7 +96,7 @@ body {
 		width: 80%;
 	}
 	.box404__text {
-		font-size: 20px;
+		font-size: 24px;
 		padding: 0;
 	}
 }

@@ -10,6 +10,10 @@ bottom EEA82A
 */
 
 /*events*/
+.events .row,
+.events .col{
+	padding: 0;
+}
 .events {
 	background-color: #ffecec;
 	position: relative;
@@ -17,7 +21,7 @@ bottom EEA82A
 .event {
 	width: 100%;
 	position: relative;
-	padding: 10px;
+	padding: 15px;
 	overflow: hidden;
 }
 .event__img {
@@ -37,11 +41,11 @@ bottom EEA82A
 	text-align: center;
 	background-color: white;
 	border-radius: 20px;
-	padding: 5px;
+	padding: 20px 5px;
 	box-shadow: 0 0 5px 5px #307b9b;
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: space-between;
 	align-items: center;
 	backface-visibility: hidden;
 	transform: rotateY(180deg);
@@ -49,15 +53,25 @@ bottom EEA82A
 }
 
 .event__revers .label-button {
-	margin-top: auto;
+	/*margin-top: auto;*/
 	padding: 5px 10px;
-	font-size: 20px;
+	font-size: 20px;	
+}
+.event__revers span{
+	color: #ffb800;
+	font-weight: bold;
+	font-size: 24px;
 }
 .event__title {
 	color: #307b9b;
-	font-size: 20px;
+	font-size: 24px;
 	text-align: center;
 	position: relative;
+}
+.event__revers span{
+	color: #ffb800;
+	font-weight: bold;
+	font-size: 20px;
 }
 .event__title::after {
 	content: "";
@@ -71,7 +85,7 @@ bottom EEA82A
 }
 .event__description {
 	color: #307b9b;
-	font-size: 18px;
+	font-size: 24px;
 	text-align: center;
 	position: relative;
 	margin: 25px 0;
@@ -84,3 +98,20 @@ bottom EEA82A
 .event:hover .event__revers {
 	transform: rotateY(360deg);
 }
+
+
+@media screen and (max-width: 1024px) {
+	.event__revers {
+		padding: 30px 5px;
+	}
+	.event__revers span,
+	.event__title,
+	.event__description	{
+		font-size: 24px;
+	}	
+	
+}
+
+
+
+
