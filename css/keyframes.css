@@ -93,3 +93,18 @@
 		transform: rotateY(359deg);
 	}
 }
+
+
+/*блик*/
+@keyframes animFlare {
+	0% {
+		left: -1000%;		
+	}
+	100% {
+		left: 1000%;		
+	}
+}
+
+
+
+

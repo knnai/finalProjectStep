@@ -33,6 +33,7 @@ body {
 }
 .label-button,
 .button {
+	display: inline-block;
 	text-decoration: none;
 	padding: 10px 20px;
 	color: white;
@@ -42,11 +43,30 @@ body {
 	background-image: linear-gradient(#fbd079, #eea82a);
 	box-shadow: 0 5px 5px -3px grey;
 	cursor: pointer;
-	transition: color 0.5s;
+	position: relative;	
+	overflow: hidden;
+	transition: 0.5s;
 }
+.flare,
+.flare-delay {	
+	position: absolute;
+	top: 50%;
+	left: -100%;
+	transform: translateY(-50%) rotate(45deg);
+	width: 1px;
+	height: 200%;
+	background: rgba(255, 255, 255, .5);
+	box-shadow: 0 0 15px 5px rgba(255, 255, 255, .7);
+	animation: animFlare 8s linear infinite;
+}
+.flare-delay {	
+	animation: animFlare 8s linear 5s infinite;
+}
+
 .label-button:hover,
 .button:hover {
 	color: #307b9b;
+	box-shadow: 0 0px 10px 4px #307b9b;
 }
 .button__wrapper {
 	text-align: center;
@@ -685,6 +705,11 @@ label[for="burger"] > span:nth-child(3) {
 	width: 200px;
 }
 
+.carousel-item img {
+	border-radius: 10px;
+	box-shadow: 0 0 5px 5px #307b9b;
+}
+
 /*gallery*/
 .gallery__viewport {
 	width: 100%;
@@ -703,17 +728,13 @@ label[for="burger"] > span:nth-child(3) {
 	border: 5px solid white;
 	box-shadow: 0 0 5px 5px black;
 	filter: grayscale(0.5);
+	transition: .5s;
 	/*right: -100%;*/
-}
-.gallery__img:hover {
-	border: 5px solid #ffb800;
-	box-shadow: 0 0 5px 5px #307b9b;
-	filter: grayscale(0);
 }
 
 .gallery__img:nth-child(1) {
 	transform: rotate(15deg);
-	animation: animPhoto 5s alternate linear infinite;
+	animation: animPhoto 5s alternate linear infinite;	
 }
 .gallery__img:nth-child(2) {
 	transform: rotate(-15deg);
@@ -731,6 +752,14 @@ label[for="burger"] > span:nth-child(3) {
 	transform: rotate(15deg);
 	animation: animPhoto 5s alternate linear infinite;
 }
+
+.gallery__img:hover {
+	border: 5px solid #ffb800;
+	box-shadow: 0 0 5px 5px #307b9b;
+	filter: grayscale(0);
+	animation-play-state: paused;
+}
+
 
 /*reviews*/
 .review {

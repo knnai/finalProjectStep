@@ -45,16 +45,20 @@ $(document).ready(function () {
 
 
 	//sucessesSlider
-	let sucessesInterval = 3000;
+	let sucessesInterval = 5000;
 	let sucessesSlider = new Slider($('.successes .block-for-slider'));
 	let sucessesIdInterval = setInterval(() => { sucessesSlider.nextSlide() }, sucessesInterval);
 	//let sucessesIdInterval = setInterval(sucessesSlider.nextSlide, sucessesInterval);
 	$('.successes .next-btn').click(function () {
 		sucessesSlider.nextSlide();
+		clearInterval(sucessesIdInterval);
+		sucessesIdInterval = setInterval(() => { sucessesSlider.nextSlide() }, sucessesInterval);
 	});
 
 	$('.successes .prev-btn').click(function () {
 		sucessesSlider.prevSlide();
+		clearInterval(sucessesIdInterval);
+		sucessesIdInterval = setInterval(() => { sucessesSlider.nextSlide() }, sucessesInterval);
 	});
 	$('.successes .viewport').hover(function () {
 		clearInterval(sucessesIdInterval);
@@ -63,16 +67,20 @@ $(document).ready(function () {
 	});
 
 	//reviewsSlider
-	let reviewsInterval = 5000;
+	let reviewsInterval = 7000;
 	let reviewsSlider = new Slider($('.reviews .block-for-slider'));
 	let reviewsIdInterval = setInterval(() => { reviewsSlider.nextSlide() }, reviewsInterval);
 	//let reviewsIdInterval = setInterval(reviewsSlider.nextSlide, reviewsInterval);
 	$('.reviews .next-btn').click(function () {
 		reviewsSlider.nextSlide();
+		clearInterval(reviewsIdInterval);
+		reviewsIdInterval = setInterval(() => { reviewsSlider.nextSlide() }, reviewsInterval);		
 	});
 
 	$('.reviews .prev-btn').click(function () {
 		reviewsSlider.prevSlide();
+		clearInterval(reviewsIdInterval);
+		reviewsIdInterval = setInterval(() => { reviewsSlider.nextSlide() }, reviewsInterval);		
 	});
 	$('.reviews .viewport').hover(function () {
 		clearInterval(reviewsIdInterval);
