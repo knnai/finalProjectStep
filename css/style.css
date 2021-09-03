@@ -13,7 +13,7 @@ bottom EEA82A
 @import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 /*общие*/
 * {
-	box-sizing: border-box!Important; /*materialize*/
+	box-sizing: border-box !important; /*materialize*/
 	padding: 0;
 	margin: 0;
 }
@@ -43,23 +43,23 @@ body {
 	background-image: linear-gradient(#fbd079, #eea82a);
 	box-shadow: 0 5px 5px -3px grey;
 	cursor: pointer;
-	position: relative;	
+	position: relative;
 	overflow: hidden;
 	transition: 0.5s;
 }
 .flare,
-.flare-delay {	
+.flare-delay {
 	position: absolute;
 	top: 50%;
 	left: -100%;
 	transform: translateY(-50%) rotate(45deg);
 	width: 1px;
 	height: 200%;
-	background: rgba(255, 255, 255, .5);
-	box-shadow: 0 0 15px 5px rgba(255, 255, 255, .7);
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
 	animation: animFlare 8s linear infinite;
 }
-.flare-delay {	
+.flare-delay {
 	animation: animFlare 8s linear 5s infinite;
 }
 
@@ -117,10 +117,12 @@ body {
 
 /*--start логотип--*/
 .logo {
-	/*background-color: darkblue;*/
 	width: 15%;
 	min-width: 150px;
 	float: left;
+}
+.logo:hover .logo__img {
+	animation: rotateY360 10s infinite cubic-bezier(0.46, 0.41, 0.25, 1.77) alternate;
 }
 .logo__link {
 	text-decoration: none;
@@ -156,9 +158,6 @@ body {
 	width: 50px;
 	vertical-align: top;
 }
-.logo__link:hover .logo__img {
-	animation: rotateY360 10s infinite cubic-bezier(0.46, 0.41, 0.25, 1.77) alternate;
-}
 /*--end логотип--*/
 /*--start меню--*/
 .menu {
@@ -168,9 +167,9 @@ body {
 	text-align: right;
 	float: right;
 }
-.menu__item:nth-of-type(2)>a::after{
-	content:"\25BC";
-	font-size: .8em;
+.menu__item:nth-of-type(2) > a::after {
+	content: "\25BC";
+	font-size: 0.8em;
 }
 
 .menu__item > .submenu {
@@ -363,7 +362,8 @@ label[for="burger"] > span:nth-child(3) {
 	position: relative;
 }
 .footer {
-	background: url("https://v-variant.com.ua/uploads/posts/2020-07/1595332635_110325473_1085105681891992_1206441472243599742_o.jpg") center/cover no-repeat fixed;
+	background: url("https://v-variant.com.ua/uploads/posts/2020-07/1595332635_110325473_1085105681891992_1206441472243599742_o.jpg")
+		center/cover no-repeat fixed;
 	position: relative;
 }
 .about::before,
@@ -728,13 +728,13 @@ label[for="burger"] > span:nth-child(3) {
 	border: 5px solid white;
 	box-shadow: 0 0 5px 5px black;
 	filter: grayscale(0.5);
-	transition: .5s;
+	transition: 0.5s;
 	/*right: -100%;*/
 }
 
 .gallery__img:nth-child(1) {
 	transform: rotate(15deg);
-	animation: animPhoto 5s alternate linear infinite;	
+	animation: animPhoto 5s alternate linear infinite;
 }
 .gallery__img:nth-child(2) {
 	transform: rotate(-15deg);
@@ -759,7 +759,6 @@ label[for="burger"] > span:nth-child(3) {
 	filter: grayscale(0);
 	animation-play-state: paused;
 }
-
 
 /*reviews*/
 .review {
@@ -929,7 +928,7 @@ label[for="burger"] > span:nth-child(3) {
 }
 
 .footer .section__subtitle {
-	color: #fff;		
+	color: #fff;
 }
 
 .copyright {
@@ -944,17 +943,11 @@ label[for="burger"] > span:nth-child(3) {
 	.content {
 		width: 100% !important; /*materialize*/
 	}
-	.content {
-		/*padding: 10px 10px;*/
-	}
 	.menu__item a {
 		font-size: 0.85em;
 	}
 	.block-for-slider {
 		width: 100%;
-	}
-	.viewport {
-		/*width: 85%;*/
 	}
 }
 
@@ -987,8 +980,8 @@ label[for="burger"] > span:nth-child(3) {
 		padding-left: 40px;*/
 		display: none;
 	}
-	.menu__item:nth-of-type(2)>a::after{
-		content:"";
+	.menu__item:nth-of-type(2) > a::after {
+		content: "";
 	}
 	.menu__item > .submenu::before {
 		display: none;
@@ -999,7 +992,7 @@ label[for="burger"] > span:nth-child(3) {
 	}
 	.menu__item > a {
 		font-size: 20px;
-		padding: 10px 0 10px 30px;		
+		padding: 10px 0 10px 30px;
 		letter-spacing: 0.2em;
 		text-align: left;
 	}
@@ -1046,13 +1039,6 @@ label[for="burger"] > span:nth-child(3) {
 		height: 20%;
 	}
 	/*successes*/
-	.prev-btn {
-		/*left: -20px;*/
-	}
-
-	.next-btn {
-		/*right: -20px;*/
-	}
 	.contacts__description,
 	.contacts__map {
 		width: 96%;
