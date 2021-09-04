@@ -49,8 +49,7 @@ bottom EEA82A
 	align-items: center;
 	backface-visibility: hidden;
 	transform: rotateY(180deg);
-	transition: transform 1s, opacity 1s;
-	opacity: 0;
+	transition: transform 1s;
 }
 
 .event__revers .label-button {
@@ -98,7 +97,6 @@ bottom EEA82A
 
 .event:hover .event__revers {
 	transform: rotateY(360deg);
-	opacity: 1;
 }
 
 @media screen and (max-width: 1024px) {
