@@ -1,0 +1,102 @@
+body {
+	background-color: #ffecec;
+}
+.err404-wrapper {
+    width: 100%;
+    padding: 70px 0 20px;
+    height: 100vh;
+	text-align: center;
+    background-color: #ffecec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.err404__title {
+	color: #307b9b;
+	font-size: 48px;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.err404__title span {
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffb800;
+	font-weight: bold;
+	position: relative;
+}
+
+.err404__title span::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	left: -50%;
+	top: 90%;
+	height: 15px;
+	background: url(../img/hr.png) center/cover no-repeat;
+}
+
+.box404 {
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+	text-align: center;
+}
+
+.box404:nth-child(even) .box404__img {
+	order: 1;
+}
+
+.box404__text {
+	text-align: center;
+	padding: 5%;
+	font-size: 40px;
+	color: #307b9b;
+}
+
+.box404__button {
+	margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+	.box404__text {
+		font-size: 34px;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.err404__title {
+		font-size: 28px;
+	}
+	.err404__title span::after {
+		height: 10px;
+	}
+	.err404-wrapper,
+	.box404 {
+		display: block;
+	}
+	.box404__img {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 425px) {
+	.err404__title {
+		font-size: 20px;
+	}
+	.err404__title span::after {
+		height: 7px;
+	}
+	.box404 {
+		display: block;
+		text-align: center;
+	}
+	.box404__img {
+		width: 80%;
+	}
+	.box404__text {
+		font-size: 24px;
+		padding: 0;
+	}
+}

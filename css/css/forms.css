@@ -1,0 +1,149 @@
+/*
+COLORS
+#307b9b - blue
+#ffb800 - orange
+##ffecec - background pink
+
+Button linear-gradient
+top FBD079
+bottom EEA82A
+*/
+
+/*common*/
+input[class^="form"],
+textarea[class^="form"],
+p[class^="form"],
+select[class^="form"],
+select[class^="form"] optgroup {
+	/*добавлен тег - materialize*/
+	font-family: "Neucha", cursive !important; /*materialize*/
+	font-size: 20px !important; /*materialize*/
+	width: 100%;
+	resize: none !important; /*materialize*/
+	outline-style: none !important; /*materialize*/
+	border: 1px solid #ffb800 !important; /*materialize*/
+	border-radius: 5px !important; /*materialize*/
+	color: #307b9b; /* !Important; materialize*/
+	margin-bottom: 15px !important; /*materialize*/
+	padding: 5px 10px !important; /*materialize*/
+	height: auto !important; /*materialize*/
+	display: inline-block !important; /*materialize*/
+}
+
+select:invalid,
+::placeholder {
+	color: #d2d2d2;
+}
+
+.form {
+	border: none;
+	padding: 0;
+	text-align: center;
+}
+
+p.form__title {
+	/*добавлен тег - materialize*/
+	font-weight: bold;
+	border: none !important; /*materialize*/
+	text-align: center;
+}
+
+input.form__submit {
+	display: block;
+	width: 200px !important; /*materialize*/
+	margin: 10px auto 10px;
+	padding: 10px 20px;
+	color: white;
+	font-weight: bold;
+	border-radius: 20px !important; /*materialize*/
+	background-image: linear-gradient(#fbd079, #eea82a);
+	box-shadow: 0 5px 5px -3px grey;
+	cursor: pointer;
+	transition: color 0.5s;
+}
+input.form__submit:hover {
+	/*добавлен тег - materialize*/
+	color: #307b9b;
+}
+
+/*question-form*/
+#question-name{
+	width: 100%;
+}
+input.question__submit {
+	/*добавлен тег - materialize*/
+	width: 150px !important; /*materialize*/
+	color: #fff;
+	cursor: pointer;
+}
+
+/*registration-form*/
+.form-wrapper {
+	position: fixed;
+	background-color: rgba(48, 123, 155, 0.8);
+	top: 0;
+	left: 0;
+	width: 100vw;
+	min-width: 320px;
+	height: 100vh;
+	z-index: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;	
+}
+
+.registration {
+	width: 25%;
+	min-width: 290px;
+	padding: 20px 20px 10px;
+	background-color: white;
+	border: 2px solid #ffb800;
+	border-radius: 15px;
+	position: relative;
+}
+#reg-classes-check,
+#reg-events-check {
+	display: none;
+}
+#reg-classes-check:checked + .form-wrapper {
+	visibility: visible;
+}
+#reg-events-check:checked + .form-wrapper {
+	visibility: visible;
+}
+
+.registration__close {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #ffb800;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+.registration__close::before,
+.registration__close::after {
+	content: "";
+	position: absolute;
+	width: 80%;
+	height: 4px;
+	top: 50%;
+	left: 50%;
+	background-color: #ffb800;
+	border-radius: 2px;
+}
+
+.registration__close::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.registration__close::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.registration__close:hover {
+	background-color: #307b9b;
+}

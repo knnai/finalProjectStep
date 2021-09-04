@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Одаренок</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<!-- для отображения иконок подключаем шрифты онлайн -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- подключение стилевого файла фреймворка Materialize -->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/keyframes.css">
+	<link rel="stylesheet" href="css/forms.css">
+	
+</head>
+
+<body>
+	<header class="header">
+		<nav class="content">
+			<div class="logo">
+				<a href="index.html" class="logo__link">
+					<img src="img/logo.png" alt="Логотип" class="logo__img">
+					одарёнок
+				</a>
+			</div>
+
+			<input type="checkbox" id="burger">
+			<label for="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<ul class="menu">
+				<li class="menu__item"><a href="about.html">О нас</a></li>
+				<li class="menu__item"><a href="classes.html">Занятия</a>
+					<ul class="submenu">
+						<li class="submenu__item"><a href="classes.html#classes-small">Развивашки от 12 мес</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-school">Подготовка к школе</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-ma">Ментальная арифметика</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-languages">Иностранные языки</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-painting">Живопись</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-vokals">Вокал</a></li>
+						<li class="submenu__item"><a href="classes.html#classes-dancing">Хореография</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="successes.html">Наши успехи</a></li>
+				<li class="menu__item"><a href="gallery.html">Фотогалерея</a></li>
+				<li class="menu__item"><a href="events.html">Мероприятия</a></li>
+				<li class="menu__item"><a href="index.html#reviews">Отзывы</a></li>
+				<li class="menu__item"><a href="#contacts">Контакты</a></li>
+			</ul>
+			<div class="clear"></div>
+		</nav>
+	</header>
+
+	<!--main-->
+	<main class="main">
+		<!--home-->
+		<section class="home">
+			<div class="content">
+				<h1 class="home__title">Родительский клуб <span>&laquo;одарёнок&raquo;</span> </h1>
+				<div class="box">
+					<img class="box__img" src="img/home-1.png" alt="home-img-1.png">
+					<p class="box__text">Наш клуб - территория содружества родителей, детей и педагогов.</p>
+					<p class="box__text">Мы предлагаем различные направления для развития ваших детей.</p>
+					<p class="box__text">У нас есть развивающие занятия для детей от года, группы, подготавливающие детей к школе
+						(5-7 лет), курсы английского и немецкого языков, танцевальная и театральные студии, творческая мастерская, а
+						также занятия с психологом, логопедом, &laquo;цветные ладошки&raquo;, &laquo;веселая глина&raquo; и многое
+						другое...</p>
+					<p class="box__text">Опытные педагоги помогут вашим деткам стать ещё лучше!</p>
+					<p class="box__text">Первое занятие <span>бесплатно!!!</span></p>
+					<!--<div class="box__button"><a href="#" class="button">Записаться</a></div>-->
+					<div class="button__wrapper">
+						<label class="label-button" for="reg-classes-check">
+							Записаться							
+							<div class="flare"></div>
+						</label>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</section>
+
+		<!--about-->
+		<section class="about" id="about">
+			<div class="content">
+				<h2 class="section__title">О нас</h2>
+				<div class="box">
+					<img class="box__img" src="img/about-1.png" alt="home-img-1.png">
+					<p class="box__text">Уютный клуб для самых важных в мире людей.</p>
+					<p class="box__text">Чтобы ребенок рос и развивался ему нужны не только физический уход и любовь родителей, но
+						и специальные
+						занятия, которые смогут раскрыть его потенциал.</p>
+					<p class="box__text">Родительский клуб <span><strong>&laquo;одарёнок&raquo;</strong></span> поможет Вам и Вашему ребенку
+						развить его способности и проявить себя.</p>
+					<p class="box__text">В нашем клубе работают квалифицированные и опытные специалисты с использованием
+						современных материалов и
+						оборудования. Маленькие группы позволяют преподавателю уделять внимание каждому ребенку.</p>
+					<p class="box__text">Ваш ребенок будет окружен заботой и любовью.</p>
+					<p class="box__text">С нами интересно расти и развиваться вместе!</p>
+					<div class="box__button">
+						<a href="about.html" class="button">Подробнее
+							<div class="flare-delay"></div>
+						</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</section>
+
+		<!--classes-->
+		<section class="classes" id="classes">
+			<div class="content">
+				<h2 class="section__title">Занятия</h2>
+				<h3 class="section__subtitle">Для самых маленьких</h3>
+				<div class="list">
+
+					<div class="item">
+						<a class="item__link" href="classes.html#classes-small">
+							<img class="item__img" src="img/classes-small.jpg" alt="">
+							Развивашки от 12 мес</a>
+						<!-- <div class="item__frame"></div> -->
+					</div>
+
+					<div class="item">
+						<a class="item__link" href="classes.html#classes-school">
+							<img class="item__img" src="img/classes-school.jpg" alt="">
+							Подготовка к школе</a>
+						<!-- <div class="item__frame"></div> -->
+					</div>
+
+					<div class="item">
+						<a class="item__link" href="classes.html#classes-ma">
+							<img class="item__img" src="img/classes-ma.jpg" alt="">
+							Ментальная арифметика</a>
+						<!-- <div class="item__frame"></div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--languages-->
+		<section class="languages">
+			<div class="content">
+				<h3 class="section__subtitle">Иностранные языки</h3>
+				<div class="list">
+
+					<div class="item">
+						<a class="item__link" href="classes.html#classes-languages">
+							<img class="item__img" src="img/english.jpg" alt="">
+							Английский язык</a>
+						<!-- <div class="item__frame"></div> -->
+					</div>
+
+					<div class="item">
+						<a class="item__link" href="classes.html#classes-languages">
+							<img class="item__img" src="img/france.jpg" alt="">
+							Французский язык</a>
+						<!-- <div class="item__frame"></div> -->
+					</div>
+
+					<div class="item">
+						<a class="item__link" href="classes.html#classes-languages">
+							<img class="item__img" src="img/german.jpg" alt="">
+							Немецкий язык</a>
+						<!-- <div class="item__frame"></div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--art-->
+		<section class="art">
+			<div class="content">
+				<h3 class="section__subtitle">Искусство</h3>
+				<div class="list">
+
+					<div class="item">
+						<a class="item__link" href="classes.html#classes-painting">
+							<img class="item__img" src="img/painting.jpg" alt="">
+							Живопись</a>
+						<!-- <div class="item__frame"></div> -->
+					</div>
+
+					<div class="item">
+						<a class="item__link" href="classes.html#classes-vokals">
+							<img class="item__img" src="img/vokals.jpg" alt="">
+							Вокал</a>
+						<!-- <div class="item__frame"></div> -->
+					</div>
+
+					<div class="item">
+						<a class="item__link" href="classes.html#classes-dancing">
+							<img class="item__img" src="img/dancing.jpg" alt="">
+							Хореография</a>
+						<!-- <div class="item__frame"></div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--successes-->
+		<section class="successes" id="successes">
+			<div class="content">
+				<h2 class="section__title">Наши успехи</h2>
+				<div class="block-for-slider">
+					<div class="viewport">
+						<ul class="slidewrapper">
+							<li class="slide"><img src="img/successes-1.jpg" alt="1" class="slide-img"></li>
+							<li class="slide"><img src="img/successes-2.jpg" alt="2" class="slide-img"></li>
+							<li class="slide"><img src="img/successes-3.jpg" alt="3" class="slide-img"></li>
+						</ul>
+					</div>
+					<!--<div class="prev-next-btns">-->
+						<div class="prev-btn"></div>
+						<div class="next-btn"></div>
+					<!-- </div> -->
+				</div>
+				<div class="box__button">
+					<a href="successes.html" class="button">Подробнее
+						<div class="flare-delay"></div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!--gallery-->
+		<section class="gallery" id="gallery">
+			<div class="content">
+				<h2 class="section__title">Фотогалерея</h2>
+				<div class="gallery__viewport">
+					<img class="gallery__img" src="img/gallery-1.jpg" alt="">
+					<img class="gallery__img" src="img/gallery-2.jpg" alt="">
+					<img class="gallery__img" src="img/gallery-3.jpg" alt="">
+					<img class="gallery__img" src="img/gallery-4.jpg" alt="">
+					<img class="gallery__img" src="img/gallery-5.jpg" alt="">
+				</div>
+			</div>
+			<div class="box__button">
+				<a href="gallery.html" class="button">Подробнее
+					<div class="flare"></div>
+				</a>
+			</div>
+		</section>
+
+		<!--events-->
+		<section class="events" id="events">
+			<div class="content">
+				<h2 class="section__title">Мероприятия</h2>
+				<div class="carousel">
+					<a class="carousel-item" href="#"><img src="img/event-1.jpg" alt=""></a>
+					<a class="carousel-item" href="#"><img src="img/event-2.jpg" alt=""></a>
+					<a class="carousel-item" href="#"><img src="img/event-3.jpg" alt=""></a>
+					<a class="carousel-item" href="#"><img src="img/event-2.jpg" alt=""></a>
+					<a class="carousel-item" href="#"><img src="img/event-3.jpg" alt=""></a>
+				</div>
+				<div class="box__button">
+					<a href="events.html" class="button">Подробнее
+						<div class="flare-delay"></div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<!--reviews-->
+		<section class="reviews" id="reviews">
+			<div class="content">
+				<h2 class="section__title">Отзывы родителей</h2>
+				<div class="block-for-slider">
+					<div class="viewport">
+						<ul class="slidewrapper">
+							<li class="slide">
+								<div class="review">
+									<div class="review__description">
+										<img class="review__photo" src="img/review1.jpg" alt="">
+										<p class="review__autor">Иванов Иван</p>
+									</div>
+									<p class="review__text">
+										Хочется сказать огромное спасибо всему коллективу клуба &laquo;Одарёнок&raquo; за профессионализм, отзывчивость, креативность, понимание, за индивидуальный подход к каждому воспитаннику, за то, что они вкладывают всю душу в каждого ребенка. Именно здесь мы раскрылись по-настоящему и, приходя на занятие, чувствуешь себя как дома: легко и свободно! Оставайтесь такими же позитивными! Спасибо вам за всё!!!
+									</p>
+								</div>
+							</li>
+
+							<li class="slide">
+								<div class="review">
+									<div class="review__description">
+										<img class="review__photo" src="img/review2.jpg" alt="">
+										<p class="review__autor"> Мария Сергеева </p>
+									</div>
+									<p class="review__text">
+										Наша любимая доченька с удовольствием посещает клуб, и даже иногда, проснувшись ночью говорит, что пора идти в развивашку.
+										Дети окружены вниманием и заботой, каждый день получают много новых и интересных знаний.
+										Не знаю кто как, но наша доченька просит пойти в клуб и в выходные.
+										Говорит, что соскучилась по своим друзьям и Леной (Елена Валентиновна - любимый воспитатель).
+										Мы очень рады, что наш выбор остановился именно на &laquo;Одарёнке&raquo;.
+									</p>
+								</div>
+							</li>
+
+							<li class="slide">
+								<div class="review">
+									<div class="review__description">
+										<img class="review__photo" src="img/review3.jpg" alt="">
+										<p class="review__autor"> Петр Сидоров </p>
+									</div>
+									<p class="review__text">
+										Мы очень долго выбирали и наш выбор остановился на клубе &laquo;Одарёнок&raquo;. Первое впечатление было таким: приятный интерьер, чистота, адекватные цены и очень приятный коллектив. Ребенок очень быстро адаптировался и с самого первого дня ходит с большим удовольствием!
+										Клуб &laquo;Одарёнок&raquo;, а также его коллектив - самые лучшие!
+									</p>
+								</div>
+							</li>
+
+							<li class="slide">
+								<div class="review">
+									<div class="review__description">
+										<img class="review__photo" src="img/review4.jpg" alt="">
+										<p class="review__autor"> Анна Петрова </p>
+									</div>
+									<p class="review__text">
+										Доброжелательный и вежливый коллектив. Грамотные педагоги, каждый ребенок находится во внимании и заботе. Занятия интересные и насыщенные, мой ребенок многому учится, получает навыки культуры поведения в коллективе, творческие навыки, английский язык, физические и музыкальные упражнения.
+										Здорово!!!!!!! Молодцы!!!!!!!!
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="prev-next-btns"> -->
+						<div class="prev-btn"></div>
+						<div class="next-btn"></div>
+					<!-- </div> -->
+				</div>
+			</div>
+		</section>
+
+
+		<!--форма записи на пробный урок-->
+		<input type="checkbox" id="reg-classes-check">
+		<div class="form-wrapper">			
+			<form class="form registration" action="#" method="POST">
+				<label class="registration__close" for="reg-classes-check"></label>
+				<p class="form__title">Записаться на пробное занятие</p>
+				<select class="form__classes browser-default" name="classes" required>
+					<option value disabled selected>Выберите занятие...</option>
+					<optgroup class="reg-classes" label="Для малышей">
+						<option value="small">Развивашки(от 12 мес.)</option>
+						<option value="school">Подготовка к школе</option>
+						<option value="mental-arithmetic">Ментальная арифметика</option>
+					</optgroup>
+					<optgroup class="reg-classes" label="Иностранные языки">
+						<option value="english">Английский</option>
+						<option value="france">Французский</option>
+						<option value="german">Немецкий</option>
+					</optgroup>
+					<optgroup class="reg-classes" label="Искусство">
+						<option value="painting">Живопись</option>
+						<option value="vokals">Вокал</option>
+						<option value="dancing">Хореография</option>
+					</optgroup>
+				</select>
+				<input class="form__name browser-default" type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input class="form__tel browser-default" type="tel" name="tel" id="tel" placeholder="Номер телефона" required>
+				<input class="form__submit" type="submit" value="Записаться">
+			</form>
+		</div>
+	</main>
+	<!--contacts-->
+	<footer class="footer" id="contacts">
+		<div class="content">
+			<!-- <h2 class="section__title">Контакты</h2> -->
+			<div class="contacts">
+
+				<div class="contacts__description">
+					<h2 class="section__title">Контакты</h2>
+					<div class="contacts__location">
+						<p>Родительский клуб <span>&laquo;одарёнок&raquo;</span></p>
+						<p class="contacts__addr">г.Краматорск, ул.Дворцовая 99</p>
+						<a class="contacts__tel" href="tel:+380501234567">+38 (050) 123-45-67</a>
+					</div>
+					<div class="contacts__social">
+						<p>Мы в социальных сетях</p>
+						<a class="contacts__soc-link"
+							href="https://www.facebook.com/%D0%9E%D0%B4%D0%B0%D1%80%D0%B5%D0%BD%D0%BE%D0%BA-322667251488063/"
+							target="_blank"></a>
+						<a class="contacts__soc-link" href="#"></a>
+						<a class="contacts__soc-link" href="#"></a>
+					</div>
+					<div class="contacts__question">
+						<p>Остались вопросы?</p>
+						<form action="#" method="POST" class="form">
+							<input class="form__name" type="text" name="name" id="question-name"
+								placeholder="Ваше имя" required>
+							<input class="form__tel" type="tel" name="tel" id="question-tel"
+								placeholder="Номер телефона" required>
+							<textarea class="form__question" name="question" id="question" cols="30" rows="5" placeholder="Ваш вопрос"
+								required></textarea>
+							<input class="form__submit question__submit" type="submit" value="Задать вопрос">
+						</form>
+					</div>
+				</div>
+				<div class="contacts__map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.052791669497!2d37.60544011508178!3d48.72358291814411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df96f4271b940b%3A0x5f97e1f3199a2b83!2z0KDQvtC00LjRgtC10LvRjNGB0LrQuNC5INCa0LvRg9CxICLQntC00LDRgNC10L3QvtC6Ig!5e0!3m2!1sru!2sua!4v1628333777778!5m2!1sru!2sua"
+						width="600" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div class="clear"></div>
+			</div>	
+			<h2 class="section__subtitle">Спасибо за просмотр!</h2>
+			<p class="copyright">&copy;2021</p>			
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/slider.js"></script>
+
+	<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			options = {
+				duration: 200,
+				dist: -30,
+				shift: 0,
+				padding: 70,
+				numVisible: 5,
+				fullWidth: false,
+				indicators: false,
+				noWrap: false,
+				onCycleTo: null
+			};
+
+			var elems = document.querySelectorAll('.carousel');
+			var instances = M.Carousel.init(elems, options);
+		});
+	</script>
+</body>
+
+</html>

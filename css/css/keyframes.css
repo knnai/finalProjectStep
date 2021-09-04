@@ -1,0 +1,110 @@
+@keyframes menuItemAnimation {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(7deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(-7deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/*движение вправо внутрь*/
+@keyframes moveToRightIn {
+	0% {
+		left: -150%;
+		opacity: 0;
+	}
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+/*движение влево внутрь*/
+@keyframes moveToLeftIn {
+	0% {
+		right: -150%;
+		opacity: 0;
+	}
+	100% {
+		right: 0;
+		opacity: 1;
+	}
+}
+
+/*движение влево за пределы*/
+@keyframes moveToLeftOut {
+	0% {
+		left: 0;
+		opacity: 1;
+	}
+	100% {
+		left: -150%;
+		opacity: 0;
+	}
+}
+
+/*движение вправо за пределы*/
+@keyframes moveToRightOut {
+	0% {
+		right: 0;
+		opacity: 1;
+	}
+	100% {
+		right: -150%;
+		opacity: 0;
+	}
+}
+
+/*масштаб от 0 до 1*/
+@keyframes scale {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/*вращение от +XXdeg до -XXdeg*/
+@keyframes animPhoto {
+	0% {
+		transform: rotate(12deg);
+	}
+	100% {
+		transform: rotate(-12deg);
+	}
+}
+
+/*вращение по оси Y */
+@keyframes rotateY360 {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(359deg);
+	}
+}
+
+
+/*блик*/
+@keyframes animFlare {
+	0% {
+		left: -1000%;		
+	}
+	100% {
+		left: 1000%;		
+	}
+}
+
+
+
+
