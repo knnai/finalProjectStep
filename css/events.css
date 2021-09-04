@@ -11,7 +11,7 @@ bottom EEA82A
 
 /*events*/
 .events .row,
-.events .col{
+.events .col {
 	padding: 0;
 }
 .events {
@@ -55,9 +55,9 @@ bottom EEA82A
 .event__revers .label-button {
 	/*margin-top: auto;*/
 	padding: 5px 10px;
-	font-size: 20px;	
+	font-size: 20px;
 }
-.event__revers span{
+.event__revers span {
 	color: #ffb800;
 	font-weight: bold;
 	font-size: 24px;
@@ -68,7 +68,7 @@ bottom EEA82A
 	text-align: center;
 	position: relative;
 }
-.event__revers span{
+.event__revers span {
 	color: #ffb800;
 	font-weight: bold;
 	font-size: 20px;
@@ -99,19 +99,13 @@ bottom EEA82A
 	transform: rotateY(360deg);
 }
 
-
 @media screen and (max-width: 1024px) {
 	.event__revers {
 		padding: 30px 5px;
 	}
 	.event__revers span,
 	.event__title,
-	.event__description	{
+	.event__description {
 		font-size: 24px;
-	}	
-	
+	}
 }
-
-
-
-

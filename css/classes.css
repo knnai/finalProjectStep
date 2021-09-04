@@ -125,7 +125,9 @@ bottom EEA82A
 	font-size: 1.2em;
 	font-weight: bold;
 	text-align: center;
+	margin-bottom: 5px;
 }
+
 .classes__video {
 	width: 40%;
 	min-width: 280px;
